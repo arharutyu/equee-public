@@ -24,8 +24,8 @@ export const Statistics = () => {
     ];
 
     return (
-        <section className="did-you-know section">
-            <div className="container">
+        <section className="did-you-know">
+            <div className="container-fluid">
                 <div className="did-you-know-content">
                     <h2 className="did-you-know-title text-center">
                         Did you know that

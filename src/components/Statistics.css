@@ -1,10 +1,17 @@
+/*TODO: Figure out margine formatting for the grid*/
+
 .did-you-know {
-    background-color: var(--color-white);
+    background-color: var(--color-purple-backdrop);
     padding: var(--spacing-3xl) 0;
 }
 
 .did-you-know-content {
     max-width: 100%;
+    background-color: var(--color-white);
+    align-self: center;
+    margin: var(--spacing-md) var(--spacing-md);
+    padding: var(--spacing-xl) var(--spacing-2xl);
+    border-radius: var(--border-radius-md);
 }
 
 .did-you-know-title {
@@ -28,14 +35,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 320px;
+    max-width: 450px;
     text-align: center;
 }
 
 /* Icon Wrapper with Circular Gradient Background */
 .statistic-icon-wrapper {
-    width: 138px;
-    height: 138px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     background: linear-gradient(180deg, #6D2DCE 0%, #503ACE 50%, #1C02A5 100%);
     display: flex;
@@ -54,8 +61,8 @@
 
 /* Icon Styling */
 .statistic-icon {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     filter: brightness(0) invert(1); /* Make icons white */
 }
@@ -73,7 +80,7 @@
 /* Tablet Styles */
 @media (min-width: 768px) {
     .statistics-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 2fr);
         gap: var(--spacing-2xl);
         max-width: 1000px;
         margin: 0 auto;
@@ -84,21 +91,22 @@
     }
 
     .statistic-text {
-        font-size: 1rem; /* Slightly smaller for better fit in 3 columns */
+        font-size: 1rem;
     }
 }
 
 /* Large Desktop */
 @media (min-width: 1200px) {
     .statistics-grid {
-        gap: var(--spacing-3xl);
+        gap: var(--spacing-2xl);
+        margin: var(--spacing-md) auto;
     }
 
     .statistic-item {
-        max-width: 340px;
+        max-width: 30vw;
     }
 
     .statistic-text {
-        font-size: var(--font-size-p); /* Back to full size on larger screens */
+        font-size: var(--font-size-p);
     }
 }
