@@ -16,6 +16,7 @@ export const Hero = () => {
                         </p>
                         <div className="hero-actions flex-center">
                             <button className="btn btn-outline-light btn-hero hover-lift hover-shadow">
+                                {/* TODO: on click to redirect to portal */}
                                 <span className="btn-text-mobile">Contact us</span>
                                 <span className="btn-text-desktop">Register</span>
                             </button>

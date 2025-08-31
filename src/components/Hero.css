@@ -39,6 +39,7 @@
 
 .hero-actions {
     margin-bottom: var(--spacing-xl);
+    justify-content: flex-start;
 }
 
 .btn-hero {
@@ -119,10 +120,6 @@
         margin-left: 0;
         margin-right: 0;
         font-size: 1.1rem;
-    }
-
-    .hero-actions {
-        justify-content: flex-start;
     }
 
     .btn-text-desktop {
