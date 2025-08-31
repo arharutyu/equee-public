@@ -31,7 +31,9 @@
     --gradient-purple-reverse: linear-gradient(24deg, #1C02A5 0%, #503ACE 50%, #6D2DCE 100%);
 
     /* Typography scales */
-    --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    --font-family-primary: 'Poppins', sans-serif;
+    --font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    --font-family: var(--font-family-primary), var(--font-family-system);
 
     /* Font sizes - responsive using clamp() */
     --font-size-h1: clamp(3.5rem, 4vw, 4.5rem); /* 56-72px */
@@ -115,7 +117,7 @@ html {
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-family), var(--font-family-system), serif;
     font-weight: 300;
     line-height: 1.6;
     color: var(--color-black);
@@ -195,7 +197,7 @@ p, .p {
     align-items: center;
     justify-content: center;
     padding: var(--btn-padding-y) var(--btn-padding-x);
-    font-family: var(--font-family);
+    font-family: var(--font-family), var(--font-family-system), serif;
     font-size: var(--font-size-p);
     font-weight: 750;
     text-decoration: none;
@@ -567,7 +569,7 @@ p, .p {
 .form-control {
     width: 100%;
     padding: var(--spacing-md);
-    font-family: var(--font-family);
+    font-family: var(--font-family), var(--font-family-system), serif;
     font-size: var(--font-size-p);
     border: 2px solid var(--color-purple-light);
     border-radius: var(--border-radius-md);
