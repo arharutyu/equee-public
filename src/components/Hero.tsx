@@ -16,7 +16,6 @@ export const Hero = () => {
                         </p>
                         <div className="hero-actions flex-center">
                             <button className="btn btn-outline-light btn-hero hover-lift hover-shadow">
-                                {/* TODO: on click to redirect to portal */}
                                 <span className="btn-text-mobile">Contact us</span>
                                 <span className="btn-text-desktop">Register</span>
                             </button>
@@ -25,7 +24,7 @@ export const Hero = () => {
                     <div className="hero-visual flex-center">
                         <div className="phone-mockup-container flex-center">
                             <img
-                                src="/assets/phone-mockup.png"
+                                src="/img/home-img-placeholder-screen-1.png"
                                 alt="Equee mobile app interface showing user registration forms"
                                 className="phone-mockup-img hover-lift"
                             />

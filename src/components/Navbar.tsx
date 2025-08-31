@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import equeeLogoColour from '../assets/img/equee-logo-colour.png';
+import equeeLogoColour from '/img/equee-logo-colour.png';
 import './Navbar.css';
 
 export const Navbar = () => {

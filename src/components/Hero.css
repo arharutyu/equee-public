@@ -1,6 +1,6 @@
 .hero {
     background: var(--gradient-purple);
-    padding: var(--spacing-2xl) 0;
+    padding: var(--spacing-2xl) 0 0 0;
     position: relative;
 }
 
@@ -72,11 +72,11 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
     .hero {
-        padding: var(--spacing-xl) 0;
+        padding: var(--spacing-xl) 0 0 0;
     }
 
     .hero-content {
-        gap: var(--spacing-2xl);
+        gap: var(--spacing-xl);
     }
 
     .hero-title {
@@ -92,6 +92,7 @@
     .btn-hero {
         padding: 1rem 3.5rem;
         min-width: 160px;
+        margin-bottom: var(--spacing-lg);
     }
 
     .phone-mockup-img {
@@ -101,13 +102,19 @@
 
 /* Desktop Styles */
 @media (min-width: 769px) {
+    .hero {
+        padding: var(--spacing-2xl) 0 0 0;
+    }
+
     .hero-content {
         grid-template-columns: 1fr 1fr;
-        gap: var(--spacing-3xl);
+        gap: var(--spacing-2xl);
+        align-items: end;
     }
 
     .hero-text {
         padding-right: var(--spacing-xl);
+        padding-bottom: var(--spacing-xl);
     }
 
     .hero-title {
