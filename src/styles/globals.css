@@ -26,9 +26,9 @@
     --color-purple: #8C7DDD;
     --color-purple-dark: #402AB2;
 
-    /* Purple gradients */
-    --gradient-purple: linear-gradient(135deg, #6D2DCE 0%, #503ACE 50%, #1C02A5 100%);
-    --gradient-purple-reverse: linear-gradient(135deg, #1C02A5 0%, #503ACE 50%, #6D2DCE 100%);
+    /* Purple gradients - Mobile first (24°) */
+    --gradient-purple: linear-gradient(24deg, #6D2DCE 0%, #503ACE 50%, #1C02A5 100%);
+    --gradient-purple-reverse: linear-gradient(24deg, #1C02A5 0%, #503ACE 50%, #6D2DCE 100%);
 
     /* Typography scales */
     --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
@@ -62,7 +62,7 @@
 
     /* Button padding */
     --btn-padding-y: 1rem; /* 16px */
-    --btn-padding-x: 6rem; /* 80px */
+    --btn-padding-x: 6rem; /* 100px */
     --btn-padding-y-sm: 0.75rem; /* 12px */
     --btn-padding-x-sm: 2rem; /* 32px */
     --btn-padding-y-lg: 1.25rem; /* 20px */
@@ -197,7 +197,7 @@ p, .p {
     padding: var(--btn-padding-y) var(--btn-padding-x);
     font-family: var(--font-family);
     font-size: var(--font-size-p);
-    font-weight: 400;
+    font-weight: 750;
     text-decoration: none;
     border: none;
     border-radius: var(--border-radius-lg);
@@ -511,6 +511,11 @@ p, .p {
     .text-md-center { text-align: center; }
     .text-md-left { text-align: left; }
     .text-md-right { text-align: right; }
+
+    :root {
+        --gradient-purple: linear-gradient(64deg, #1C02A5 0%, #503ACE 50%, #6D2DCE 100%);
+        --gradient-purple-reverse: linear-gradient(64deg, #6D2DCE 0%, #503ACE 50%, #1C02A5 100%);
+    }
 }
 
 /* Large devices (1024px and up) */
