@@ -62,17 +62,17 @@
 
     /* Button padding */
     --btn-padding-y: 1rem; /* 16px */
-    --btn-padding-x: 5rem; /* 80px */
+    --btn-padding-x: 6rem; /* 80px */
     --btn-padding-y-sm: 0.75rem; /* 12px */
     --btn-padding-x-sm: 2rem; /* 32px */
     --btn-padding-y-lg: 1.25rem; /* 20px */
     --btn-padding-x-lg: 6rem; /* 96px */
 
     /* Border radius */
-    --border-radius-sm: 0.25rem; /* 4px */
-    --border-radius-md: 0.5rem; /* 8px */
-    --border-radius-lg: 0.75rem; /* 12px */
-    --border-radius-xl: 1rem; /* 16px */
+    --border-radius-sm: 1rem; /* 16px */
+    --border-radius-md: 2rem; /* 32px */
+    --border-radius-lg: 3rem; /* 48px */
+    --border-radius-xl: 4rem; /* 64px */
 
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);

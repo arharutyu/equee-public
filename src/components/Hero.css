@@ -46,11 +46,13 @@
 }
 
 .btn-text-desktop {
+    font-weight: 750;
     display: none;
 }
 
 .btn-text-mobile {
     display: inline;
+    font-weight: 750;
 }
 
 .hero-visual {
@@ -89,7 +91,7 @@
     }
 
     .btn-hero {
-        padding: 1rem 2.5rem;
+        padding: 1rem 3.5rem;
         min-width: 160px;
     }
 
