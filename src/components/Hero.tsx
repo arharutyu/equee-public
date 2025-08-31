@@ -2,7 +2,7 @@ import './Hero.css';
 
 export const Hero = () => {
     return (
-        <section className="hero">
+        <section className="hero section-fullheight overflow-hidden">
             <div className="container">
                 <div className="hero-content">
                     <div className="hero-text">
@@ -14,19 +14,19 @@ export const Hero = () => {
                             correctly as well as helps you find the insurance that you need to protect you
                             from life's ups and downs
                         </p>
-                        <div className="hero-actions">
-                            <button className="btn btn-hero">
+                        <div className="hero-actions flex-center">
+                            <button className="btn btn-outline-light btn-hero hover-lift hover-shadow">
                                 <span className="btn-text-mobile">Contact us</span>
                                 <span className="btn-text-desktop">Register</span>
                             </button>
                         </div>
                     </div>
-                    <div className="hero-visual">
-                        <div className="phone-mockup-container">
+                    <div className="hero-visual flex-center">
+                        <div className="phone-mockup-container flex-center">
                             <img
                                 src="/assets/phone-mockup.png"
                                 alt="Equee mobile app interface showing user registration forms"
-                                className="phone-mockup-img"
+                                className="phone-mockup-img hover-lift"
                             />
                         </div>
                     </div>

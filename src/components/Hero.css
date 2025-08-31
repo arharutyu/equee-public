@@ -1,12 +1,7 @@
-/* Hero Section */
 .hero {
     background: var(--gradient-purple);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
     padding: var(--spacing-2xl) 0;
     position: relative;
-    overflow: hidden;
 }
 
 .hero-content {
@@ -17,10 +12,9 @@
     width: 100%;
 }
 
-/* Hero Text */
 .hero-text {
     text-align: center;
-    z-index: 2;
+    z-index: var(--z-base);
 }
 
 .hero-title {
@@ -44,33 +38,13 @@
 }
 
 .hero-actions {
-    display: flex;
-    justify-content: center;
     margin-bottom: var(--spacing-xl);
 }
 
-/* Hero Button */
 .btn-hero {
-    background: var(--color-white);
-    color: var(--color-purple-dark);
-    border: none;
-    padding: var(--btn-padding-y) var(--btn-padding-x);
-    font-family: var(--font-family);
-    font-size: var(--font-size-p);
-    font-weight: 500;
-    border-radius: var(--border-radius-xl);
-    cursor: pointer;
-    transition: all var(--transition-normal);
     min-width: 200px;
 }
 
-.btn-hero:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
-    background: var(--color-light-cream);
-}
-
-/* Button Text Switching */
 .btn-text-desktop {
     display: none;
 }
@@ -79,19 +53,12 @@
     display: inline;
 }
 
-/* Phone Mockup Image */
 .hero-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
 
 .phone-mockup-container {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .phone-mockup-img {
@@ -101,15 +68,10 @@
     transition: transform var(--transition-normal);
 }
 
-.phone-mockup-img:hover {
-    transform: translateY(-5px);
-}
-
 /* Mobile Styles */
 @media (max-width: 768px) {
     .hero {
         padding: var(--spacing-xl) 0;
-        min-height: auto;
     }
 
     .hero-content {
@@ -164,7 +126,6 @@
         justify-content: flex-start;
     }
 
-    /* Button text switching for desktop */
     .btn-text-desktop {
         display: inline;
     }
