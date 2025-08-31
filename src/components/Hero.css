@@ -56,10 +56,13 @@
 
 .hero-visual {
     position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .phone-mockup-container {
     position: relative;
+    margin-bottom: 0;
 }
 
 .phone-mockup-img {
@@ -67,6 +70,8 @@
     height: auto;
     filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.2));
     transition: transform var(--transition-normal);
+    display: block;
+    margin-bottom: 0;
 }
 
 /* Mobile Styles */
@@ -110,6 +115,8 @@
         grid-template-columns: 1fr 1fr;
         gap: var(--spacing-2xl);
         align-items: end;
+        padding-left: var(--spacing-xl);
+        padding-right: var(--spacing-xl);
     }
 
     .hero-text {

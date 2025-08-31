@@ -60,7 +60,7 @@
     --logo-height: 37px;
     --logo-height-mobile: 32px;
     --hamburger-size: 25px;
-    --hero-min-height: 100vh;
+    --hero-min-height: 80vh;
 
     /* Button padding */
     --btn-padding-y: 1rem; /* 16px */
@@ -374,7 +374,7 @@ p, .p {
 .section-fullheight {
     min-height: var(--hero-min-height);
     display: flex;
-    align-items: center;
+    align-items: end;
 }
 
 /* Overflow utilities */
@@ -460,6 +460,7 @@ p, .p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--spacing-md);
+    height: fit-content;
 }
 
 .container-fluid {
