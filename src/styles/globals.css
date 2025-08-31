@@ -7,6 +7,9 @@
     --color-white: #FEFEFE;
     --color-grey: #474552;
     --color-black: #0D0D0E;
+    --color-light-cream: #FFF9F1;
+    --color-light-blue: #F4F8FB;
+    --color-light-purple: #E8EDFC;
 
     /* Orange palette */
     --color-orange-light: #402AB2;
@@ -26,6 +29,9 @@
     /* Purple gradients */
     --gradient-purple: linear-gradient(135deg, #6D2DCE 0%, #503ACE 50%, #1C02A5 100%);
     --gradient-purple-reverse: linear-gradient(135deg, #1C02A5 0%, #503ACE 50%, #6D2DCE 100%);
+
+    /* Blue palette */
+
 
     /* Typography scales */
     --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
