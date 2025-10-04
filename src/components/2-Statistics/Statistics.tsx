@@ -34,7 +34,7 @@ export const Statistics = () => {
                     <div className="statistics-grid">
                         {statistics.map((stat, index) => (
                             <div key={index} className="statistic-item">
-                                <div className="statistic-icon-wrapper">
+                                <div className="icon-circle">
                                     <img
                                         src={stat.icon}
                                         alt={stat.iconAlt}

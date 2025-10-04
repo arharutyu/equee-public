@@ -36,24 +36,8 @@
     text-align: center;
 }
 
-/* Icon Wrapper with Circular Gradient Background */
-.statistic-icon-wrapper {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: linear-gradient(180deg, #6D2DCE 0%, #503ACE 50%, #1C02A5 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.icon-circle {
     margin-bottom: var(--spacing-lg);
-    flex-shrink: 0;
-    box-shadow: var(--shadow-md);
-    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
-}
-
-.statistic-icon-wrapper:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
 }
 
 /* Icon Styling */

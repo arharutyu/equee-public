@@ -1,0 +1,31 @@
+.icon-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--gradient-purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal);
+}
+
+.icon-circle:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.icon-circle-sm {
+    width: 60px;
+    height: 60px;
+}
+
+.icon-circle-lg {
+    width: 110px;
+    height: 110px;
+}
+
+.icon-white {
+    filter: brightness(0) invert(1);
+}
