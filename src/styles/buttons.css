@@ -1,0 +1,96 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    font-family: var(--font-family), var(--font-family-system), serif;
+    font-size: var(--font-size-p);
+    font-weight: 750;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    outline: none;
+    min-height: 3.5rem;
+}
+
+.btn:focus {
+    outline: 2px solid var(--color-purple);
+    outline-offset: 2px;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Primary Buttons */
+.btn-primary-orange {
+    background: var(--gradient-orange);
+    color: var(--color-white);
+    border: none;
+}
+
+.btn-primary-orange:hover {
+    background: var(--gradient-orange-reverse);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-primary-purple {
+    background: var(--gradient-purple);
+    color: var(--color-white);
+    border: none;
+}
+
+.btn-primary-purple:hover {
+    background: var(--gradient-purple-reverse);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background: var(--color-white);
+    color: var(--color-orange-dark);
+    border: 2px solid var(--color-orange);
+}
+
+.btn-secondary:hover {
+    background: var(--color-orange);
+    color: var(--color-white);
+    border-color: var(--color-orange);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Outline Light Button (for 1-Hero-style buttons) */
+.btn-outline-light {
+    background: var(--color-white);
+    color: var(--color-purple-dark);
+    border: 2px solid var(--color-white);
+}
+
+.btn-outline-light:hover {
+    background: var(--color-light-cream);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Button sizes */
+.btn-sm {
+    padding: var(--btn-padding-y-sm) var(--btn-padding-x-sm);
+    font-size: 0.875rem;
+    min-height: 2.5rem;
+}
+
+.btn-lg {
+    padding: var(--btn-padding-y-lg) var(--btn-padding-x-lg);
+    font-size: 1.125rem;
+    min-height: 4rem;
+}

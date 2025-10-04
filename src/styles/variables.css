@@ -1,0 +1,99 @@
+:root {
+    /* Colors */
+    --color-white: #FEFEFE;
+    --color-grey: #474552;
+    --color-black: #0D0D0E;
+    --color-light-cream: #FFF9F1;
+    --color-light-blue: #F4F8FB;
+    --color-light-purple: #E8EDFC;
+
+    /* Orange palette */
+    --color-orange-light: #402AB2;
+    --color-orange: #DD8704;
+    --color-orange-dark: #A15C26;
+
+    /* Orange gradients */
+    --gradient-orange: linear-gradient(135deg, #DC8A1D 0%, #CC7736 50%, #B34015 100%);
+    --gradient-orange-reverse: linear-gradient(135deg, #B34015 0%, #CC7736 50%, #DC8A1D 100%);
+
+    /* Purple palette */
+    --color-purple-backdrop: #F4F8FB;
+    --color-purple-light: #E2E0F3;
+    --color-purple: #8C7DDD;
+    --color-purple-dark: #402AB2;
+
+    /* Purple gradients - Mobile first (24°) */
+    --gradient-purple: linear-gradient(24deg, #6D2DCE 0%, #503ACE 50%, #1C02A5 100%);
+    --gradient-purple-reverse: linear-gradient(24deg, #1C02A5 0%, #503ACE 50%, #6D2DCE 100%);
+
+    /* Typography scales */
+    --font-family-primary: 'Poppins', sans-serif;
+    --font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    --font-family: var(--font-family-primary), var(--font-family-system);
+
+    /* Font sizes - responsive using clamp() */
+    --font-size-h1: clamp(3.5rem, 4vw, 4.5rem); /* 56-72px */
+    --font-size-h2: clamp(2.5rem, 3vw, 3.25rem); /* 40-52px */
+    --font-size-h3: 2.5rem; /* 40px */
+    --font-size-h4: 2rem; /* 32px */
+    --font-size-h5: clamp(1.25rem, 2vw, 1.5rem); /* 20-24px */
+    --font-size-h6: 1.25rem; /* 20px */
+    --font-size-p-large: 1.5rem; /* 24px */
+    --font-size-p: clamp(1.125rem, 2vw, 1.25rem); /* 18-20px */
+
+    /* Spacing */
+    --spacing-xs: 0.25rem; /* 4px */
+    --spacing-sm: 0.5rem; /* 8px */
+    --spacing-md: 1rem; /* 16px */
+    --spacing-lg: 1.5rem; /* 24px */
+    --spacing-xl: 2rem; /* 32px */
+    --spacing-2xl: 3rem; /* 48px */
+    --spacing-3xl: 4rem; /* 64px */
+
+    /* Component Sizing */
+    --navbar-height: 60px;
+    --navbar-height-mobile: 60px;
+    --logo-height: 37px;
+    --logo-height-mobile: 32px;
+    --hamburger-size: 25px;
+    --hero-min-height: 80vh;
+
+    /* Button padding */
+    --btn-padding-y: 1rem; /* 16px */
+    --btn-padding-x: 6rem; /* 100px */
+    --btn-padding-y-sm: 0.75rem; /* 12px */
+    --btn-padding-x-sm: 2rem; /* 32px */
+    --btn-padding-y-lg: 1.25rem; /* 20px */
+    --btn-padding-x-lg: 6rem; /* 96px */
+
+    /* Border radius */
+    --border-radius-sm: 1rem; /* 16px */
+    --border-radius-md: 2rem; /* 32px */
+    --border-radius-lg: 3rem; /* 48px */
+    --border-radius-xl: 4rem; /* 64px */
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    /* Transitions */
+    --transition-fast: 0.15s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
+
+    /* Z-Index Scale */
+    --z-base: 1;
+    --z-dropdown: 10;
+    --z-overlay: 100;
+    --z-drawer: 101;
+    --z-modal: 102;
+    --z-popover: 103;
+    --z-tooltip: 104;
+
+    /* Breakpoints */
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1200px;
+}
