@@ -8,15 +8,6 @@
     max-width: 100%;
 }
 
-.signup-features-title {
-    color: var(--color-black);
-    font-size: var(--font-size-p);
-    font-weight: 600;
-    line-height: 1.6;
-    margin-bottom: var(--spacing-md);
-    margin-top: var(--spacing-lg);
-}
-
 /* Features List */
 .signup-features-list {
     list-style: none;
@@ -83,7 +74,7 @@
     }
 
     .section-description,
-    .signup-features-title {
+    .section-title {
         text-align: left;
     }
 

@@ -22,7 +22,7 @@ export const SignUp = () => {
                             Specifically in your phone, but then we thought why not your laptop and desktop as well.*
                         </p>
 
-                        <p className="signup-features-title">
+                        <p className="section-title">
                             A simple site that allows you to:
                         </p>
 

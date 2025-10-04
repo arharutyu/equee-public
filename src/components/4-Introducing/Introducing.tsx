@@ -26,9 +26,9 @@ export const Introducing = () => {
                             Your financial bestfriend that runs on any device
                         </p>
 
-                        <ul className="introducing-features-list">
+                        <ul className="feature-list">
                             {features.map((feature, index) => (
-                                <li key={index} className="introducing-feature-item">
+                                <li key={index} className="feature-list-item">
                                     <img src={checkmarkIcon} alt="" className="checkmark-icon" />
                                     <span>{feature}</span>
                                 </li>
