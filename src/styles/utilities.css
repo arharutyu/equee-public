@@ -1,3 +1,6 @@
+.order-reverse { order: -1; }
+.order-first { order: 1; }
+
 /* ===== TEXT & COLOR UTILITIES ===== */
 
 /* Text Colors */
@@ -113,10 +116,10 @@
     }
 
     .container {
-        padding: 0 var(--spacing-md);
+        padding: 0 var(--spacing-xl);
     }
 
-    h1, .h1 { font-size: 2.5rem; }
+    h1, .h1 { font-size: 2.75rem; }
     h2, .h2 { font-size: 2rem; }
     h3, .h3 { font-size: 1.75rem; }
 }

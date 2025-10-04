@@ -2,7 +2,7 @@ import './Hero.css';
 
 export const Hero = () => {
     return (
-        <section className="hero section-fullheight overflow-hidden">
+        <section className="hero section-fullheight">
             <div className="container">
                 <div className="hero-content">
                     <div className="hero-text">

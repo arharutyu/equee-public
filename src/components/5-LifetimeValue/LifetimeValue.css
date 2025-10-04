@@ -3,6 +3,10 @@
     padding: var(--spacing-3xl) 0;
 }
 
+.lifetime-order {
+    order: 1;
+}
+
 /* Text Content */
 .lifetime-value-text {
     max-width: 100%;
@@ -104,7 +108,7 @@
         gap: var(--spacing-xl);
     }
 
-    .illustration-container {
+    .lifetime-order {
         order: -1;
     }
 }

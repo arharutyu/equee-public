@@ -5,7 +5,7 @@ export const RiskFree = () => {
         <section className="risk-free section">
             <div className="container">
                 <div className="section-two-col">
-                    <div className="illustration-container">
+                    <div className="illustration-container risk-free-illustration">
                         <img
                             src="/img/home-img-riskfree.png"
                             alt="Prevention illustration showing stopping falling dominoes"

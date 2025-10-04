@@ -19,7 +19,7 @@
     }
 
     /* Image appears first on mobile */
-    .illustration-container {
+    .why-now-illustration {
         order: -1;
     }
 }

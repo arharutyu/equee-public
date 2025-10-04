@@ -5,15 +5,20 @@
 
 .try-now-card {
     background-color: var(--color-light-purple);
-    border-radius: var(--border-radius-xl);
     padding: var(--spacing-3xl) var(--spacing-xl);
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    border-radius: var(--border-radius-xs);
 }
 
-.section-description {
-    font-weight: 400;
+.try-now-card .section-title {
+    color: var(--color-purple-dark);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+.try-now-card .section-description {
+    text-align: center;
     margin-bottom: var(--spacing-xl);
 }
 
@@ -22,30 +27,11 @@
     justify-content: center;
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-    .try-now {
-        padding: var(--spacing-2xl) 0;
-    }
-
-    .try-now-card {
-        padding: var(--spacing-2xl) var(--spacing-lg);
-        border-radius: var(--border-radius-lg);
-    }
-
-    .section-title {
-        font-size: 1.75rem;
-    }
-
-    .section-description {
-        font-size: 1rem;
-    }
-}
-
 /* Desktop Styles */
 @media (min-width: 769px) {
     .try-now-card {
         padding: var(--spacing-3xl) var(--spacing-2xl);
+        border-radius: var(--border-radius-md);
     }
 }
 

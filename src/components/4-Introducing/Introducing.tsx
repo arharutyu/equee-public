@@ -18,13 +18,13 @@ export const Introducing = () => {
             <div className="container">
                 <div className="introducing-content">
                     <div className="introducing-text">
-                        <h2 className="section-title">
+                        <h2 className="section-title highlight">
                             Introducing Equee
                         </h2>
 
-                        <p className="introducing-subtitle">
+                        <h2 className="section-title">
                             Your financial bestfriend that runs on any device
-                        </p>
+                        </h2>
 
                         <ul className="feature-list">
                             {features.map((feature, index) => (

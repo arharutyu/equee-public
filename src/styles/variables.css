@@ -67,6 +67,7 @@
     --btn-padding-x-lg: 6rem; /* 96px */
 
     /* Border radius */
+    --border-radius-xs: 0.5rem;
     --border-radius-sm: 1rem; /* 16px */
     --border-radius-md: 2rem; /* 32px */
     --border-radius-lg: 3rem; /* 48px */

@@ -11,13 +11,9 @@
     max-width: 100%;
 }
 
-/* Subtitle */
-.introducing-subtitle {
-    color: var(--color-black);
-    font-size: var(--font-size-h4);
-    font-weight: 500;
-    line-height: 1.3;
-    margin-bottom: var(--spacing-xl);
+.section-title.highlight {
+    color: var(--color-purple-dark);
+    margin-bottom: var(--spacing-sm);
 }
 
 /* Uses .feature-list from lists.css */

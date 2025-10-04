@@ -23,7 +23,7 @@ export const WhyNow = () => {
                         </p>
                     </div>
 
-                    <div className="illustration-container">
+                    <div className="illustration-container why-now-illustration">
                         <img
                             src="/img/home-img-equee-now.png"
                             alt="Taking action now for future benefits illustration"
