@@ -1,0 +1,21 @@
+.section-two-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+@media (min-width: 769px) {
+    .section-two-col {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Reverse column order on desktop */
+.section-two-col-reverse .section-visual {
+    order: 1;
+}
+
+.section-two-col-reverse .section-text {
+    order: 2;
+}

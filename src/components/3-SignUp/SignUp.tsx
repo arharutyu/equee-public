@@ -4,7 +4,7 @@ export const SignUp = () => {
     return (
         <section className="signup section">
             <div className="container">
-                <div className="signup-content">
+                <div className="section-two-col">
                     <div className="signup-text">
                         <h2 className="signup-title">
                             Imagine if there was a way to squeeze a financial adviser into your phone.

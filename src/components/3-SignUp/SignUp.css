@@ -3,13 +3,6 @@
     padding: var(--spacing-3xl) 0;
 }
 
-.signup-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-3xl);
-    align-items: center;
-}
-
 /* Text Content */
 .signup-text {
     max-width: 100%;
@@ -106,12 +99,6 @@
 
 /* Desktop Styles */
 @media (min-width: 769px) {
-    .signup-content {
-        grid-template-columns: 1fr 1fr;
-        gap: var(--spacing-3xl);
-        align-items: center;
-    }
-
     .signup-text {
         padding-right: var(--spacing-xl);
     }
@@ -141,7 +128,7 @@
 
 /* Large Desktop */
 @media (min-width: 1200px) {
-    .signup-content {
+    .section-two-col {
         gap: var(--spacing-3xl);
     }
 

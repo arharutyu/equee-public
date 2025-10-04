@@ -5,7 +5,7 @@ export const LifetimeValue = () => {
     return (
         <section className="lifetime-value section">
             <div className="container">
-                <div className="lifetime-value-content">
+                <div className="section-two-col">
                     <div className="lifetime-value-text">
                         <h2 className="lifetime-value-title">
                             Up to 30% Better Over Your Lifetime

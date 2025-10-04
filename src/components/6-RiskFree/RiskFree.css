@@ -3,13 +3,6 @@
     padding: var(--spacing-3xl) 0;
 }
 
-.risk-free-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-3xl);
-    align-items: center;
-}
-
 /* Text Content */
 .risk-free-text {
     max-width: 100%;
@@ -38,7 +31,7 @@
         padding: var(--spacing-2xl) 0;
     }
 
-    .risk-free-content {
+    .section-two-col {
         gap: var(--spacing-xl);
     }
 
@@ -60,10 +53,8 @@
 
 /* Desktop Styles */
 @media (min-width: 769px) {
-    .risk-free-content {
-        grid-template-columns: 1fr 1fr;
+    .section-two-col {
         gap: var(--spacing-3xl);
-        align-items: center;
     }
 
     .risk-free-text {

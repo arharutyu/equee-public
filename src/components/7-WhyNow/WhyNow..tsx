@@ -4,7 +4,7 @@ export const WhyNow = () => {
     return (
         <section className="why-now section">
             <div className="container">
-                <div className="why-now-content">
+                <div className="section-two-col">
                     <div className="why-now-text">
                         <h2 className="why-now-title">
                             Why Get Equee Now?

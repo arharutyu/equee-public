@@ -4,7 +4,7 @@ export const RiskFree = () => {
     return (
         <section className="risk-free section">
             <div className="container">
-                <div className="risk-free-content">
+                <div className="section-two-col">
                     <div className="illustration-container">
                         <img
                             src="/img/home-img-riskfree.png"

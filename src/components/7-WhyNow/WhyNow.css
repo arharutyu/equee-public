@@ -3,13 +3,6 @@
     padding: var(--spacing-3xl) 0;
 }
 
-.why-now-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-3xl);
-    align-items: center;
-}
-
 /* Text Content */
 .why-now-text {
     max-width: 100%;
@@ -37,7 +30,7 @@
         padding: var(--spacing-2xl) 0;
     }
 
-    .why-now-content {
+    .section-two-col {
         gap: var(--spacing-xl);
     }
 
@@ -63,10 +56,8 @@
 
 /* Desktop Styles */
 @media (min-width: 769px) {
-    .why-now-content {
-        grid-template-columns: 1fr 1fr;
+    .section-two-col {
         gap: var(--spacing-3xl);
-        align-items: center;
     }
 
     .why-now-text {
