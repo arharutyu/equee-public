@@ -31,7 +31,7 @@ export const Statistics = () => {
                         Did you know that
                     </h2>
 
-                    <div className="statistics-grid">
+                    <div className="grid-stats">
                         {statistics.map((stat, index) => (
                             <div key={index} className="statistic-item">
                                 <div className="icon-circle">

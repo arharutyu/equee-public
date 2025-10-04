@@ -18,14 +18,6 @@
         gap: var(--spacing-xl);
     }
 
-    .section-description {
-        font-size: 1rem;
-    }
-
-    .illustration-img {
-        max-width: 100%;
-    }
-
     /* Image appears first on mobile */
     .illustration-container {
         order: -1;
@@ -40,16 +32,5 @@
 
     .why-now-text {
         padding-right: var(--spacing-xl);
-    }
-
-    .illustration-img {
-        max-width: 500px;
-    }
-}
-
-/* Large Desktop */
-@media (min-width: 1200px) {
-    .illustration-img {
-        max-width: 600px;
     }
 }

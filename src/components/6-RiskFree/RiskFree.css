@@ -18,16 +18,6 @@
         gap: var(--spacing-xl);
     }
 
-    .section-title {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .section-description {
-        text-align: center;
-        font-size: 1rem;
-    }
-
     /* Image appears first on mobile */
     .illustration-container {
         order: -1;
@@ -47,13 +37,5 @@
 
     .illustration-container {
         order: 1;
-    }
-
-    .section-title {
-        text-align: left;
-    }
-
-    .section-description {
-        text-align: left;
     }
 }

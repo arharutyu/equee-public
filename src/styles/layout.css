@@ -89,3 +89,43 @@
 .overflow-hidden { overflow: hidden; }
 .overflow-auto { overflow: auto; }
 .overflow-visible { overflow: visible; }
+
+/* Stats/Feature Grid Pattern */
+.grid-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+    justify-items: center;
+}
+
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 450px;
+}
+
+@media (min-width: 768px) {
+    .grid-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-2xl);
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .stats-item {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-stats {
+        gap: var(--spacing-2xl);
+        margin: var(--spacing-md) auto;
+    }
+
+    .stats-item {
+        max-width: 30vw;
+    }
+}

@@ -1,3 +1,4 @@
+/* Illustration Containers */
 .illustration-container {
     display: flex;
     justify-content: center;
@@ -15,10 +16,53 @@
     border-radius: var(--border-radius-xl);
 }
 
+/* Size Variants */
+.illustration-img-sm {
+    max-width: 350px;
+}
+
+.illustration-img-md {
+    max-width: 500px;
+}
+
+.illustration-img-lg {
+    max-width: 600px;
+}
+
+/* Responsive auto-sizing for default .illustration-img */
 @media (min-width: 769px) {
-    .illustration-img { max-width: 500px; }
+    .illustration-img:not(.illustration-img-sm):not(.illustration-img-md):not(.illustration-img-lg) {
+        max-width: 500px;
+    }
 }
 
 @media (min-width: 1200px) {
-    .illustration-img { max-width: 600px; }
+    .illustration-img:not(.illustration-img-sm):not(.illustration-img-md):not(.illustration-img-lg) {
+        max-width: 600px;
+    }
+}
+
+/* Phone Mockup Specific */
+.phone-mockup-container {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.phone-mockup-img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.2));
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .phone-mockup-img { max-width: 350px; }
+}
+
+@media (min-width: 769px) {
+    .phone-mockup-img { max-width: 500px; }
+}
+
+@media (min-width: 1200px) {
+    .phone-mockup-img { max-width: 600px; }
 }

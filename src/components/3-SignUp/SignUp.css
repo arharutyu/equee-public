@@ -41,14 +41,6 @@
     margin-top: var(--spacing-xl);
 }
 
-/* Visual/Illustration */
-.signup-illustration {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: var(--border-radius-xl);
-}
-
 /* Mobile Styles */
 @media (max-width: 768px) {
     .signup {
@@ -61,10 +53,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-
-    .signup-illustration {
-        margin-top: var(--spacing-lg);
-    }
 }
 
 /* Desktop Styles */
@@ -73,31 +61,11 @@
         padding-right: var(--spacing-xl);
     }
 
-    .section-description,
-    .section-title {
-        text-align: left;
-    }
-
     .signup-features-list {
         text-align: left;
     }
 
     .signup-actions {
         justify-content: flex-start;
-    }
-
-    .signup-illustration {
-        max-width: 500px;
-    }
-}
-
-/* Large Desktop */
-@media (min-width: 1200px) {
-    .section-two-col {
-        gap: var(--spacing-3xl);
-    }
-
-    .signup-illustration {
-        max-width: 600px;
     }
 }
