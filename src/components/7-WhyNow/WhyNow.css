@@ -31,19 +31,6 @@
     margin-bottom: var(--spacing-md);
 }
 
-/* Visual/Illustration */
-.why-now-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.why-now-illustration {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
 /* Mobile Styles */
 @media (max-width: 768px) {
     .why-now {
@@ -64,12 +51,12 @@
         font-size: 1rem;
     }
 
-    .why-now-illustration {
+    .illustration-img {
         max-width: 100%;
     }
 
     /* Image appears first on mobile */
-    .why-now-visual {
+    .illustration-container {
         order: -1;
     }
 }
@@ -95,7 +82,7 @@
         text-align: left;
     }
 
-    .why-now-illustration {
+    .illustration-img {
         max-width: 500px;
     }
 }
@@ -106,7 +93,7 @@
         font-size: 3rem;
     }
 
-    .why-now-illustration {
+    .illustration-img {
         max-width: 600px;
     }
 }
