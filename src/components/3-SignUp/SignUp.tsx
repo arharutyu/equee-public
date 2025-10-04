@@ -42,7 +42,7 @@ export const SignUp = () => {
                         </div>
                     </div>
 
-                    <div className="signup-visual">
+                    <div className="illustration-container">
                         <img
                             src="/img/home-img-bridge.jpg"
                             alt="Illustrated bridge representing the connection between you and financial advice"

@@ -75,12 +75,6 @@
 }
 
 /* Visual/Illustration */
-.signup-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .signup-illustration {
     max-width: 100%;
     height: auto;
@@ -106,7 +100,6 @@
     }
 
     .signup-illustration {
-        max-width: 100%;
         margin-top: var(--spacing-lg);
     }
 }
