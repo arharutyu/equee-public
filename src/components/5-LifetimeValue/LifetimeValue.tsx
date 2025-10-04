@@ -44,11 +44,11 @@ export const LifetimeValue = () => {
                         </div>
                     </div>
 
-                    <div className="lifetime-value-visual">
+                    <div className="illustration-container">
                         <img
                             src="/img/home-img-lifetime.png"
                             alt="Financial growth illustration showing upward trend with adviser guidance"
-                            className="lifetime-value-illustration"
+                            className="illustration-img"
                         />
                     </div>
                 </div>

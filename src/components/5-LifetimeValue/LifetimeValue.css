@@ -1,5 +1,3 @@
-/* LifetimeValue.css */
-
 .lifetime-value {
     background-color: var(--color-white);
     padding: var(--spacing-3xl) 0;
@@ -84,19 +82,6 @@
     margin-bottom: 0;
 }
 
-/* Visual/Illustration */
-.lifetime-value-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.lifetime-value-illustration {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
 /* Mobile Styles */
 @media (max-width: 768px) {
     .lifetime-value {
@@ -139,8 +124,7 @@
         font-size: 0.875rem;
     }
 
-    .lifetime-value-illustration {
-        max-width: 100%;
+    .illustration-img {
         margin-top: var(--spacing-lg);
     }
 
@@ -150,7 +134,7 @@
         gap: var(--spacing-xl);
     }
 
-    .lifetime-value-visual {
+    .illustration-container {
         order: -1;
     }
 }
@@ -185,20 +169,12 @@
     .callout-title {
         font-size: 1.125rem;
     }
-
-    .lifetime-value-illustration {
-        max-width: 500px;
-    }
 }
 
 /* Large Desktop */
 @media (min-width: 1200px) {
     .lifetime-value-title {
         font-size: 3rem;
-    }
-
-    .lifetime-value-illustration {
-        max-width: 600px;
     }
 
     .callout-icon {
