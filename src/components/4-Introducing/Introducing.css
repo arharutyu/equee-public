@@ -11,15 +11,6 @@
     max-width: 100%;
 }
 
-/* Title Styling */
-.introducing-title {
-    color: var(--color-purple-dark);
-    font-size: var(--font-size-h2);
-    font-weight: 600;
-    line-height: 1.2;
-    margin-bottom: var(--spacing-md);
-}
-
 /* Subtitle */
 .introducing-subtitle {
     color: var(--color-black);
@@ -62,11 +53,6 @@
         padding: var(--spacing-2xl) 0;
     }
 
-    .introducing-title {
-        font-size: 2rem;
-        text-align: center;
-    }
-
     .introducing-subtitle {
         font-size: 1.5rem;
         text-align: center;
@@ -94,11 +80,6 @@
         max-width: 600px;
     }
 
-    .introducing-title {
-        font-size: 3rem;
-        text-align: left;
-    }
-
     .introducing-subtitle {
         font-size: 1.75rem;
         text-align: left;
@@ -117,10 +98,6 @@
 @media (min-width: 1200px) {
     .introducing-content {
         max-width: 700px;
-    }
-
-    .introducing-title {
-        font-size: 3.5rem;
     }
 
     .introducing-subtitle {

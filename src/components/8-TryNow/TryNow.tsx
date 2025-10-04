@@ -5,11 +5,11 @@ export const TryNow = () => {
         <section className="try-now section">
             <div className="container">
                 <div className="try-now-card">
-                    <h2 className="try-now-title">
+                    <h2 className="section-title">
                         Try Equee Today
                     </h2>
 
-                    <p className="try-now-description">
+                    <p className="section-description">
                         Get your financial planner in your pocket right now
                     </p>
 

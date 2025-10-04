@@ -8,22 +8,6 @@
     max-width: 100%;
 }
 
-.lifetime-value-title {
-    color: var(--color-black);
-    font-size: var(--font-size-h2);
-    font-weight: 600;
-    line-height: 1.2;
-    margin-bottom: var(--spacing-lg);
-}
-
-.lifetime-value-description {
-    color: var(--color-grey);
-    font-size: var(--font-size-p);
-    font-weight: 300;
-    line-height: 1.6;
-    margin-bottom: var(--spacing-md);
-}
-
 /* Callout Box */
 .lifetime-value-callout {
     background-color: var(--color-light-cream);
@@ -81,13 +65,7 @@
         padding: var(--spacing-2xl) 0;
     }
 
-    .lifetime-value-title {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .lifetime-value-description {
-        text-align: center;
+    .section-description {
         font-size: 1rem;
     }
 
@@ -142,12 +120,11 @@
         padding-right: var(--spacing-xl);
     }
 
-    .lifetime-value-title {
-        font-size: 2.5rem;
+    .section-title {
         text-align: left;
     }
 
-    .lifetime-value-description {
+    .section-description {
         text-align: left;
     }
 
@@ -164,10 +141,6 @@
 
 /* Large Desktop */
 @media (min-width: 1200px) {
-    .lifetime-value-title {
-        font-size: 3rem;
-    }
-
     .callout-icon {
         width: 70px;
         height: 70px;

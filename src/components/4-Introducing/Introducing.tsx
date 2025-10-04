@@ -18,7 +18,7 @@ export const Introducing = () => {
             <div className="container">
                 <div className="introducing-content">
                     <div className="introducing-text">
-                        <h2 className="introducing-title">
+                        <h2 className="section-title">
                             Introducing Equee
                         </h2>
 

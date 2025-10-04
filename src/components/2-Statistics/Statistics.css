@@ -14,11 +14,8 @@
     border-radius: var(--border-radius-md);
 }
 
-.did-you-know-title {
-    color: var(--color-black);
-    font-size: var(--font-size-h2);
+.section-title {
     font-weight: 500;
-    line-height: 1.2;
     margin-bottom: var(--spacing-3xl);
 }
 

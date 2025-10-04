@@ -8,23 +8,6 @@
     max-width: 100%;
 }
 
-.signup-title {
-    color: var(--color-black);
-    font-size: var(--font-size-h2);
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: var(--spacing-lg);
-    text-align: left;
-}
-
-.signup-description {
-    color: var(--color-grey);
-    font-size: var(--font-size-p);
-    font-weight: 300;
-    line-height: 1.6;
-    margin-bottom: var(--spacing-md);
-}
-
 .signup-features-title {
     color: var(--color-black);
     font-size: var(--font-size-p);
@@ -81,10 +64,6 @@
         padding: var(--spacing-2xl) 0;
     }
 
-    .signup-title {
-        font-size: 2rem;
-    }
-
     .signup-features-list {
         text-align: left;
         max-width: 400px;
@@ -103,12 +82,7 @@
         padding-right: var(--spacing-xl);
     }
 
-    .signup-title {
-        font-size: 2.5rem;
-        text-align: left;
-    }
-
-    .signup-description,
+    .section-description,
     .signup-features-title {
         text-align: left;
     }
@@ -130,10 +104,6 @@
 @media (min-width: 1200px) {
     .section-two-col {
         gap: var(--spacing-3xl);
-    }
-
-    .signup-title {
-        font-size: 3rem;
     }
 
     .signup-illustration {

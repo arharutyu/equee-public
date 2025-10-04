@@ -27,7 +27,7 @@ export const Statistics = () => {
         <section className="did-you-know">
             <div className="container-fluid">
                 <div className="did-you-know-content">
-                    <h2 className="did-you-know-title text-center">
+                    <h2 className="section-title text-center">
                         Did you know that
                     </h2>
 

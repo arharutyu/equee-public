@@ -6,19 +6,19 @@ export const SignUp = () => {
             <div className="container">
                 <div className="section-two-col">
                     <div className="signup-text">
-                        <h2 className="signup-title">
+                        <h2 className="section-title">
                             Imagine if there was a way to squeeze a financial adviser into your phone.
                         </h2>
 
-                        <p className="signup-description">
+                        <p className="section-description">
                             As financial advisers we know you don't want to spend a fortune making sure your super and life insurance is done right.
                         </p>
 
-                        <p className="signup-description">
+                        <p className="section-description">
                             So we got to work on creating a solution and we started with the idea of how we could put a financial adviser in your pocket.
                         </p>
 
-                        <p className="signup-description">
+                        <p className="section-description">
                             Specifically in your phone, but then we thought why not your laptop and desktop as well.*
                         </p>
 
