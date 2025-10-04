@@ -1,0 +1,117 @@
+.risk-free {
+    background-color: var(--color-white);
+    padding: var(--spacing-3xl) 0;
+}
+
+.risk-free-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+/* Text Content */
+.risk-free-text {
+    max-width: 100%;
+}
+
+.risk-free-title {
+    color: var(--color-black);
+    font-size: var(--font-size-h2);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-lg);
+}
+
+.risk-free-description {
+    color: var(--color-grey);
+    font-size: var(--font-size-p);
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Visual/Illustration */
+.risk-free-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.risk-free-illustration {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .risk-free {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .risk-free-content {
+        gap: var(--spacing-xl);
+    }
+
+    .risk-free-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .risk-free-description {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .risk-free-illustration {
+        max-width: 100%;
+    }
+
+    /* Image appears first on mobile */
+    .risk-free-visual {
+        order: -1;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    .risk-free-content {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-3xl);
+        align-items: center;
+    }
+
+    .risk-free-text {
+        padding-left: var(--spacing-xl);
+        order: 2;
+    }
+
+    .risk-free-visual {
+        order: 1;
+    }
+
+    .risk-free-title {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .risk-free-description {
+        text-align: left;
+    }
+
+    .risk-free-illustration {
+        max-width: 500px;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+    .risk-free-title {
+        font-size: 3rem;
+    }
+
+    .risk-free-illustration {
+        max-width: 600px;
+    }
+}
