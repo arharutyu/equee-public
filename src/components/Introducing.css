@@ -1,0 +1,131 @@
+/* Introducing.css */
+
+.introducing {
+    background-color: var(--color-light-blue);
+    padding: var(--spacing-3xl) 0;
+}
+
+.introducing-content {
+    max-width: 100%;
+}
+
+.introducing-text {
+    max-width: 100%;
+}
+
+/* Title Styling */
+.introducing-title {
+    color: var(--color-purple-dark);
+    font-size: var(--font-size-h2);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Subtitle */
+.introducing-subtitle {
+    color: var(--color-black);
+    font-size: var(--font-size-h4);
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Features List */
+.introducing-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.introducing-feature-item {
+    color: var(--color-grey);
+    font-size: var(--font-size-p);
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+}
+
+/* Checkmark Icon */
+.checkmark-icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .introducing {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .introducing-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .introducing-subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .introducing-features-list {
+        max-width: 100%;
+    }
+
+    .introducing-feature-item {
+        font-size: 1rem;
+        gap: var(--spacing-sm);
+    }
+
+    .checkmark-icon {
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    .introducing-content {
+        max-width: 600px;
+    }
+
+    .introducing-title {
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    .introducing-subtitle {
+        font-size: 1.75rem;
+        text-align: left;
+    }
+
+    .introducing-features-list {
+        margin-top: var(--spacing-xl);
+    }
+
+    .introducing-feature-item {
+        gap: var(--spacing-md);
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+    .introducing-content {
+        max-width: 700px;
+    }
+
+    .introducing-title {
+        font-size: 3.5rem;
+    }
+
+    .introducing-subtitle {
+        font-size: 2rem;
+    }
+}
