@@ -1,5 +1,5 @@
 import './Introducing.css';
-import checkmarkIcon from '../assets/icons/icon-checkmark.svg';
+import checkmarkIcon from '../../assets/icons/icon-checkmark.svg';
 
 export const Introducing = () => {
     const features = [

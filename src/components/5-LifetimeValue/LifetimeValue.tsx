@@ -1,5 +1,5 @@
 import './LifetimeValue.css';
-import piggyIcon from '../assets/icons/icon-piggybank.svg';
+import piggyIcon from '../../assets/icons/icon-piggybank.svg';
 
 export const LifetimeValue = () => {
     return (

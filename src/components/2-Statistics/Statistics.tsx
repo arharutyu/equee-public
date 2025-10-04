@@ -1,8 +1,8 @@
 import './Statistics.css';
 
-import iconCash from '../assets/icons/icon-cash.svg';
-import iconSpeechBubble from '../assets/icons/icon-speech-bubble.svg';
-import iconArrowDownwards from '../assets/icons/icon-arrow-downwards.svg';
+import iconCash from '../../assets/icons/icon-cash.svg';
+import iconSpeechBubble from '../../assets/icons/icon-speech-bubble.svg';
+import iconArrowDownwards from '../../assets/icons/icon-arrow-downwards.svg';
 
 export const Statistics = () => {
     const statistics = [

@@ -264,7 +264,7 @@ p, .p {
     box-shadow: var(--shadow-md);
 }
 
-/* Outline Light Button (for Hero-style buttons) */
+/* Outline Light Button (for 1-Hero-style buttons) */
 .btn-outline-light {
     background: var(--color-white);
     color: var(--color-purple-dark);
