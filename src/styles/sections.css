@@ -19,3 +19,42 @@
 .section-two-col-reverse .section-text {
     order: 2;
 }
+
+.section-title {
+    color: var(--color-black);
+    font-size: var(--font-size-h2);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-lg);
+    text-align: left;
+}
+
+.section-description {
+    color: var(--color-grey);
+    font-size: var(--font-size-p);
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+    text-align: left;
+}
+
+.section-visual-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .section-title { font-size: 2.5rem; }
+}
+
+@media (min-width: 1200px) {
+    .section-title { font-size: 3rem; }
+}

@@ -1,0 +1,24 @@
+.illustration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-normal);
+}
+
+.illustration-img-rounded {
+    border-radius: var(--border-radius-xl);
+}
+
+@media (min-width: 769px) {
+    .illustration-img { max-width: 500px; }
+}
+
+@media (min-width: 1200px) {
+    .illustration-img { max-width: 600px; }
+}
