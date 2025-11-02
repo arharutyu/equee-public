@@ -1,0 +1,31 @@
+/* Contact Hero Section */
+.contact-hero {
+    background: var(--gradient-purple);
+    padding: var(--spacing-3xl) 0;
+}
+
+.contact-hero-title {
+    color: var(--color-white);
+    font-size: var(--font-size-h1);
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .contact-hero {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .contact-hero-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    .contact-hero-title {
+        text-align: left;
+    }
+}
