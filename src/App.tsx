@@ -4,6 +4,7 @@ import { Home } from './pages/Home';
 import { Contact } from './pages/Contact';
 import { NotFound } from './pages/NotFound';
 import './App.css';
+import {Footer} from "./components/Footer/Footer.tsx";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </main>
+                <Footer />
             </div>
         </Router>
     );
