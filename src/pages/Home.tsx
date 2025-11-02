@@ -7,6 +7,7 @@ import {WhyNow} from "../components/7-WhyNow/WhyNow..tsx";
 import {RiskFree} from "../components/6-RiskFree/RiskFree.tsx";
 import {TryNow} from "../components/8-TryNow/TryNow.tsx";
 import {Process} from "../components/9-Process/Process.tsx";
+import {FAQ} from "../components/10-FAQ/FAQ.tsx";
 
 export const Home = () => {
     return (
@@ -20,6 +21,7 @@ export const Home = () => {
             <WhyNow />
             <TryNow />
             <Process />
+            <FAQ />
         </div>
     );
 };
