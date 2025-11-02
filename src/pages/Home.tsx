@@ -6,6 +6,7 @@ import {LifetimeValue} from "../components/5-LifetimeValue/LifetimeValue.tsx";
 import {WhyNow} from "../components/7-WhyNow/WhyNow..tsx";
 import {RiskFree} from "../components/6-RiskFree/RiskFree.tsx";
 import {TryNow} from "../components/8-TryNow/TryNow.tsx";
+import {Process} from "../components/9-Process/Process.tsx";
 
 export const Home = () => {
     return (
@@ -18,6 +19,7 @@ export const Home = () => {
             <RiskFree />
             <WhyNow />
             <TryNow />
+            <Process />
         </div>
     );
 };
