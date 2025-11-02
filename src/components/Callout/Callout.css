@@ -1,0 +1,49 @@
+/* ROOT COMPONENT STYLES */
+.callout {
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius-sm);
+    margin: var(--spacing-2xl) 0;
+}
+
+/* VARIANT STYLES */
+.callout--purple {
+    background-color: var(--color-light-purple);
+}
+
+.callout--blue {
+    background-color: var(--color-light-blue);
+}
+
+.callout--cream {
+    background-color: var(--color-light-cream);
+}
+
+/* TEXT ELEMENTS */
+.callout-title {
+    color: var(--color-purple-dark);
+    font-size: var(--font-size-h5);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+}
+
+.callout-content {
+    color: var(--color-grey);
+    font-size: var(--font-size-p);
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.callout-content p {
+    margin: 0;
+}
+
+.callout-content p + p {
+    margin-top: var(--spacing-md);
+}
+
+/* MOBILE OVERRIDES */
+@media (max-width: 768px) {
+    .callout {
+        padding: var(--spacing-xl);
+    }
+}
