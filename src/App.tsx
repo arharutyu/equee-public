@@ -5,6 +5,7 @@ import { Contact } from './pages/Contact';
 import { NotFound } from './pages/NotFound';
 import './App.css';
 import {Footer} from "./components/Footer/Footer.tsx";
+import {FinancialServicesGuide} from "./pages/FinancialServicesGuide.tsx";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/financial-services-guide" element={<FinancialServicesGuide />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </main>
