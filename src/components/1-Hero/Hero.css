@@ -1,6 +1,5 @@
 .hero {
     background: var(--gradient-purple);
-    padding: var(--spacing-2xl) 0 0 0;
     position: relative;
 }
 
@@ -107,10 +106,6 @@
 
 /* Desktop Styles */
 @media (min-width: 769px) {
-    .hero {
-        padding: var(--spacing-2xl) 0 0 0;
-    }
-
     .hero-content {
         grid-template-columns: 1fr 1fr;
         gap: var(--spacing-2xl);

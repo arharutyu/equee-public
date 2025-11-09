@@ -1,10 +1,10 @@
-/* Hero Section */
-.hero {
+/* Header Section */
+.header {
     background: var(--gradient-purple);
     padding: var(--spacing-3xl) 0;
 }
 
-.hero-title {
+.header-title {
     color: var(--color-white);
     font-size: var(--font-size-h1);
     font-weight: 600;
@@ -13,21 +13,21 @@
 }
 
 /* Meta Section (Subtitle + Date) */
-.hero-meta {
+.header-meta {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: var(--spacing-lg);
 }
 
-.hero-subtitle {
+.header-subtitle {
     color: var(--color-white);
     font-size: var(--font-size-p);
     font-weight: 300;
     margin: 0;
 }
 
-.hero-date {
+.header-date {
     color: var(--color-white);
     font-size: var(--font-size-p);
     font-weight: 300;
@@ -37,43 +37,43 @@
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .hero {
+    .header {
         padding: var(--spacing-2xl) 0;
     }
 
-    .hero-title {
+    .header-title {
         font-size: 2.5rem;
         text-align: center;
     }
 
-    .hero-meta {
+    .header-meta {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: var(--spacing-sm);
     }
 
-    .hero-subtitle,
-    .hero-date {
+    .header-subtitle,
+    .header-date {
         font-size: 1rem;
     }
 }
 
 /* Desktop Styles */
 @media (min-width: 769px) {
-    .hero-title {
+    .header-title {
         text-align: left;
     }
 
-    .hero-meta {
+    .header-meta {
         flex-direction: row;
     }
 
-    .hero-subtitle {
+    .header-subtitle {
         text-align: left;
     }
 
-    .hero-date {
+    .header-date {
         text-align: right;
     }
 }
