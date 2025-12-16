@@ -1,16 +1,21 @@
 import { useState } from 'react';
 import './Process.css';
+import processImg1 from '../../../public/img/home-img-process-1.jpg';
+import processImg2 from '../../../public/img/home-img-process-2.jpg';
+import processImg3 from '../../../public/img/home-img-process-3.jpg';
 
 interface ProcessStep {
     id: number;
     title: string;
     items: { number: number; text: string }[];
+    image: string;
 }
 
 const processSteps: ProcessStep[] = [
     {
         id: 1,
         title: 'Step 1 - Registering',
+        image: processImg1,
         items: [
             {
                 number: 1,
@@ -36,8 +41,7 @@ const processSteps: ProcessStep[] = [
     },
     {
         id: 2,
-        title: 'Step 2 - Recieving documents',
-        items: [
+        title: 'Step 2 - Receiving documents',        image: processImg2,        items: [
             {
                 number: 6,
                 text: "Once you've signed the paperwork, we send some to your old superfund to close your account and to your new one (if we have recommended a change), for the opening of a new account and the transfer of your super balance."
@@ -59,18 +63,19 @@ const processSteps: ProcessStep[] = [
     {
         id: 3,
         title: 'Step 3 - Monitoring performance',
+        image: processImg3,
         items: [
             {
                 number: 10,
-                text: 'We monitor your super investment performance and rebalance when needed.'
+                text: 'Once everything is set up, we monitor your super investments.'
             },
             {
                 number: 11,
-                text: 'We review your insurance annually and adjust as your circumstances change.'
+                text: 'We report to you annually via email.'
             },
             {
                 number: 12,
-                text: 'We provide ongoing support and advice via email whenever you need it.'
+                text: "Every 3 years we will review any insurances you have set up with us. The review would cover things like if the premium you're currently paying is reasonable and if you've still got the right amount of cover based on any changes in personal circumstances. Generally, insurance requirements tend to change less often in a major way e.g. buying a house or say giving birth, so a review once every 3 years is enough. You're also welcome to contact us earlier, via email, for an earlier review if there has been a major change in your personal circumstances."
             }
         ]
     }
@@ -151,7 +156,7 @@ export const Process = () => {
                     </div>
 
                     <div className="process-illustration">
-                        {/* Illustration placeholder - to be added */}
+                        <img src={currentStep.image} alt={currentStep.title} />
                     </div>
                 </div>
 

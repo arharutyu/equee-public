@@ -1,6 +1,47 @@
 .signup {
     background-color: var(--color-white);
-    padding: var(--spacing-2xl) 0;
+    padding: 70px 0px 120px 0px;
+}
+
+/* Mobile Styles for SignUp */
+@media (max-width: 768px) {
+    .signup {
+        padding: var(--spacing-xl) 0 var(--spacing-2xl) 0;
+    }
+    
+    .signup-text {
+        text-align: center;
+        padding: 0 var(--spacing-md);
+    }
+    
+    .signup-text .section-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .signup-text .section-description {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+    
+    .signup-features-list {
+        margin-right: 0 !important;
+        max-width: 100%;
+        padding: 0 var(--spacing-md);
+    }
+    
+    .signup-feature-item {
+        font-size: 0.8rem;
+    }
+    
+    .signup-actions {
+        justify-content: center;
+    }
+    
+    .signup-illustration {
+        max-width: 100%;
+        margin-top: var(--spacing-xl);
+    }
 }
 
 /* Text Content */
@@ -9,28 +50,35 @@
 }
 
 /* Features List */
-.signup-features-list {
+/* .signup-features-list {
     list-style: none;
     padding: 0;
     text-align: left;
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+} */
+
+.signup-features-list {
+    margin-right: 56px !important;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 400px;
 }
 
 .signup-feature-item {
-    color: var(--color-grey);
-    font-size: var(--font-size-p);
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 1.6;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 8px;
     padding-left: var(--spacing-lg);
     position: relative;
 }
 
 .signup-feature-item::before {
     content: '•';
-    color: var(--color-orange);
+    color: black;
     font-size: 1.5rem;
     position: absolute;
     left: 0;
@@ -41,7 +89,7 @@
 .signup-actions {
     display: flex;
     justify-content: center;
-    margin-top: var(--spacing-xl);
+    margin-top: 16px;
 }
 
 /* Visual/Illustration */
@@ -49,7 +97,7 @@
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: var(--border-radius-xl);
+    border-radius: 10px;
     margin-top: var(--spacing-lg);
 }
 
@@ -85,6 +133,6 @@
     }
 
     .signup-illustration {
-        max-width: 600px;
+        max-width: 95%;
     }
 }

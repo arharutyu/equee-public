@@ -106,6 +106,27 @@
     max-width: 450px;
 }
 
+/* Mobile responsive utilities */
+@media (max-width: 768px) {
+    .section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .section-lg {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .grid-2-col {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .grid-auto-fit {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+}
+
 @media (min-width: 768px) {
     .grid-stats {
         grid-template-columns: repeat(3, 1fr);

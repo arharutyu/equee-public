@@ -6,7 +6,7 @@ export const SignUp = () => {
             <div className="container">
                 <div className="section-two-col">
                     <div className="signup-text">
-                        <h2 className="section-title">
+                        <h2 className="section-title-sec">
                             Imagine if there was a way to squeeze a financial adviser into your phone.
                         </h2>
 
@@ -22,7 +22,7 @@ export const SignUp = () => {
                             Specifically in your phone, but then we thought why not your laptop and desktop as well.*
                         </p>
 
-                        <p className="section-title">
+                        <p className="section-title-var">
                             A simple site that allows you to:
                         </p>
 

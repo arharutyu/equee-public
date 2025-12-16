@@ -1,6 +1,21 @@
 .risk-free {
     background-color: var(--color-white);
-    padding: var(--spacing-2xl) 0;
+    padding: 80px 0px 90px;
+}
+
+/* Mobile Styles for RiskFree */
+@media (max-width: 768px) {
+    .risk-free {
+        padding: var(--spacing-xl) 0 var(--spacing-2xl);
+    }
+    
+    .risk-free-text {
+        text-align: center;
+    }
+    
+    .risk-free-illustration {
+        order: -1;
+    }
 }
 
 /* Text Content */

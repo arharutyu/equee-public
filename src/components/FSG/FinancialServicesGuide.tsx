@@ -5,7 +5,9 @@ export const FSGContent = () => {
     return (
         <section className="fsg-page">
             <div className="container">
-                <p className="fsg-intro">
+                <div className="fsg-layout">
+                    <div className="fsg-content">
+                        <p className="fsg-intro">
                     This Financial Services Guide (FSG) is issued by Lifestyle Investment Planning Pty Ltd,
                     which holds Australian Financial Service Licence number 278361. This FSG comprises
                     and must be read in conjunction with your adviser's current Adviser Profile that
@@ -13,11 +15,12 @@ export const FSGContent = () => {
                 </p>
 
                 <Callout title="Not independent" variant="purple">
-                    <p>
-                        Lifestyle Investment Planning and its authorised representatives are not independent in relation
-                        to the provision of personal advice. Lifestyle Investment Planning may also receive commissions
-                        from life insurance providers when we recommend life insurance to our clients.
-                    </p>
+                    <p style={{ fontSize: "14px", color:"purple" }}>
+  Lifestyle Investment Planning and its authorised representatives are not independent in relation
+  to the provision of personal advice. Lifestyle Investment Planning may also receive commissions
+  from life insurance providers when we recommend life insurance to our clients.
+</p>
+
                 </Callout>
 
                 <p className="section-description">
@@ -449,11 +452,22 @@ export const FSGContent = () => {
                         <em>Further information on privacy in Australia may be obtained by visiting the website of the office of the Australian
                             Information Commissioner at <a href="https://www.oaic.gov.au">www.oaic.gov.au</a></em>
                     </p>
+                </div>
 
-                    <div className="fsg-footer">
-                        <img src="/path/to/lifestyle-logo.png" alt="Lifestyle Investment Planning" className="fsg-footer-logo" />
-                        <p className="fsg-footer-version">FSG V20210701</p>
+                      
+
+                         <div className="fsg-image-column">
+                        <img 
+                            src="/img/financial-image-lifestyle-investment.jpg" 
+                            alt="Financial Lifestyle Investment" 
+                            className="fsg-main-image"
+                        />
                     </div>
+                      <div className="fsg-footer">
+                            <p className="fsg-footer-version">FSG V20210701</p>
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
         </section>

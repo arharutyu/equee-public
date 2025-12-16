@@ -2,16 +2,56 @@
 
 .did-you-know {
     background-color: var(--color-purple-backdrop);
-    padding: var(--spacing-3xl) 0;
+    padding: 85px 95px;
+}
+
+/* Mobile Styles for Statistics */
+@media (max-width: 768px) {
+    .did-you-know {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .did-you-know-content {
+        margin: 0 !important;
+        padding: var(--spacing-lg) var(--spacing-md);
+        border-radius: 0;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    .statistics-grid {
+        gap: var(--spacing-xl);
+    }
+    
+    .statistic-item {
+        max-width: 100%;
+    }
+    
+    .icon-circle {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .statistic-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .statistic-text {
+        font-size: 0.85rem;
+        max-width: 90%;
+    }
 }
 
 .did-you-know-content {
     max-width: 100%;
     background-color: var(--color-white);
     align-self: center;
-    margin: var(--spacing-md) var(--spacing-sm);
-    padding: var(--spacing-2xl) var(--spacing-2xl);
-    border-radius: var(--border-radius-md);
+    margin: 0px 45px 0 45px;
+    padding: 45px 0px 45px 0px;
+    border-radius: 10px;
 }
 
 .section-title {
@@ -88,6 +128,8 @@
     }
 
     .statistic-text {
-        font-size: var(--font-size-p);
+        font-size: 16px;
+        color: #000000e6;
+        font-weight: 500;
     }
 }

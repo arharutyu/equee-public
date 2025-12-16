@@ -1,6 +1,6 @@
 .icon-circle {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 78px;
     border-radius: 50%;
     background: var(--gradient-purple);
     display: flex;
@@ -24,6 +24,24 @@
 .icon-circle-lg {
     width: 110px;
     height: 110px;
+}
+
+/* Mobile Icon Styles */
+@media (max-width: 768px) {
+    .icon-circle {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .icon-circle-sm {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .icon-circle-lg {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 .icon-white {

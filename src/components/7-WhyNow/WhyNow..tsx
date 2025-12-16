@@ -6,7 +6,7 @@ export const WhyNow = () => {
             <div className="container">
                 <div className="section-two-col">
                     <div className="why-now-text">
-                        <h2 className="section-title">
+                        <h2 className=".section-title-gig">
                             Why Get Equee Now?
                         </h2>
 

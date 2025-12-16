@@ -43,20 +43,20 @@ export const Navbar = () => {
           <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
             <li className="nav-item">
               <Link
-                  to="/"
-                  className={`nav-link ${isActive('/') ? 'active' : ''}`}
-                  onClick={closeMenu}
-              >
-                Sign Up / Login
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
                   to="/contact"
                   className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
                   onClick={closeMenu}
               >
-                Contact
+                Contact us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                  to="/"
+                  className={`sec-nav-link ${isActive('/') ? 'active' : ''}`}
+                  onClick={closeMenu}
+              >
+                Sign Up / Login
               </Link>
             </li>
           </ul>

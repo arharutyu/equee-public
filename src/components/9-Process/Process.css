@@ -1,6 +1,42 @@
 .process {
-    background-color: var(--color-light-blue);
+    background-color: #FFF9F1;
     padding: var(--spacing-3xl) 0;
+}
+
+/* Mobile Styles for Process */
+@media (max-width: 768px) {
+    .process {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .process-main-title {
+        font-size: 1.5rem !important;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .process-accordion-header {
+        padding: var(--spacing-md);
+        font-size: 0.9rem;
+    }
+    
+    .process-accordion-content {
+        padding: var(--spacing-md);
+    }
+    
+    .process-step-title-mobile {
+        font-size: 1.25rem;
+    }
+    
+    .process-list-item p {
+        font-size: 0.875rem !important;
+    }
+    
+    .process-number {
+        min-width: 24px;
+        width: 24px;
+        height: 24px;
+        font-size: 0.75rem;
+    }
 }
 
 /* Navigation */
@@ -8,9 +44,9 @@
     display: none;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: var(--spacing-lg);
     padding-bottom: var(--spacing-md);
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 2px solid var(--color-orange);
 }
 
 .process-nav-link {
@@ -19,9 +55,9 @@
     gap: var(--spacing-sm);
     background: none;
     border: none;
-    color: var(--color-purple-dark);
-    font-size: 1rem;
-    font-weight: 500;
+    color: #A15C26;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
     transition: opacity 0.2s ease;
 }
@@ -49,15 +85,15 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 2px solid var(--color-purple-dark);
-    background-color: transparent;
+    border: none;
+    background-color: #D9D9D9;
     cursor: pointer;
     transition: background-color 0.2s ease;
     padding: 0;
 }
 
 .process-dot.active {
-    background-color: var(--color-purple-dark);
+    background-color: var(--color-orange);
 }
 
 .process-dot:hover {
@@ -74,17 +110,18 @@
 }
 
 .process-main-title {
-    color: var(--color-grey);
-    font-size: var(--font-size-h2);
+    font-size: 35px !important;
+    color: var(--color-black);
+    font-size: 1.75rem;
     font-weight: 500;
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: 40px;
 }
 
 .process-step-title {
-    color: var(--color-purple-dark);
-    font-size: var(--font-size-h5);
-    font-weight: 600;
-    margin-bottom: var(--spacing-xl);
+    color: #a15c26;
+    font-size: 24px !important;
+    font-weight: 500;
+    margin-bottom: 20px ;
 }
 
 /* Process List */
@@ -95,44 +132,54 @@
 }
 
 .process-list-item {
+    padding-top: 15px;
     display: flex;
     align-items: flex-start;
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-xl);
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
 }
 
 .process-number {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 40px;
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--color-grey);
+    min-width: 28px;
+    width: 28px;
+    height: 27px;
+    border: 2px solid #a15c26;
     border-radius: 50%;
-    color: var(--color-grey);
-    font-size: 1rem;
-    font-weight: 500;
+    color: #a15c26;
+    font-size: 0.85rem;
+    font-weight: 600;
     flex-shrink: 0;
 }
 
 .process-list-item p {
-    color: var(--color-grey);
-    font-size: var(--font-size-p);
-    font-weight: 300;
-    line-height: 1.6;
+    color: #000000;
+    font-size: 15px !important;
+    font-weight: 400;
+    line-height: 1.4;
     margin: 0;
-    padding-top: 8px;
+    padding-top: 3px;
+    padding-left: 14px;
 }
 
 /* Illustration Placeholder */
 .process-illustration {
-    background: linear-gradient(135deg, #FFD7C4 0%, #FFE5D9 100%);
+    background: transparent;
     border-radius: 16px;
     min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.process-illustration img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: contain;
 }
 
 /* Mobile Accordion */

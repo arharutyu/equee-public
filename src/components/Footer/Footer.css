@@ -1,13 +1,13 @@
 .footer {
-    background: var(--gradient-purple);
+    background: #1A1A1A;
     color: var(--color-white);
     padding: var(--spacing-2xl) 0;
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 var(--spacing-2xl);
+    padding: 0 var(--spacing-3xl);
 }
 
 /* Top Section: Logo and Contact Button */
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
 }
 
 .footer-logo {
@@ -38,13 +38,13 @@
 
 .footer-contact-btn {
     background-color: var(--color-white);
-    color: var(--color-purple-dark);
+    color: #6B4FE3;
     text-decoration: none;
     font-family: var(--font-family);
-    font-size: var(--font-size-p);
-    font-weight: 750;
-    padding: var(--btn-padding-y) var(--btn-padding-x);
-    border-radius: var(--border-radius-lg);
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 12px 32px;
+    border-radius: 50px;
     transition: all var(--transition-normal);
     display: inline-block;
     text-align: center;
@@ -62,22 +62,22 @@
     width: 100%;
     height: 1px;
     background-color: var(--color-white);
-    opacity: 0.3;
-    margin-bottom: var(--spacing-xl);
+    opacity: 0.2;
+    margin-bottom: var(--spacing-lg);
 }
 
 /* Navigation Links */
 .footer-nav {
     display: flex;
-    gap: var(--spacing-2xl);
-    margin-bottom: var(--spacing-xl);
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
 }
 
 .footer-link {
     color: var(--color-white);
     text-decoration: none;
-    font-size: var(--font-size-p);
-    font-weight: 300;
+    font-size: 0.95rem;
+    font-weight: 400;
     transition: opacity var(--transition-normal);
 }
 
@@ -89,24 +89,27 @@
 .footer-bottom {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
 }
 
 .footer-copyright {
     color: var(--color-white);
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: 300;
     line-height: 1.5;
     margin: 0;
+    opacity: 0.7;
 }
 
 .footer-credit {
     color: var(--color-white);
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: 300;
     margin: 0;
     white-space: nowrap;
+    opacity: 0.7;
 }
 
 /* Mobile Styles */
@@ -184,5 +187,91 @@
         flex-direction: column;
         align-items: flex-start;
         gap: var(--spacing-sm);
+    }
+}
+
+/* Floating Buttons */
+.floating-buttons {
+    position: fixed;
+    bottom: -2px;
+    right: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-md);
+    z-index: 1000;
+}
+
+.floating-register-btn {
+    padding: 12px 36px;
+    border-radius: 5px;
+    background-color: #faf0d6;
+    color: var(--color-orange);
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.floating-register-btn:hover {
+    background-color: #E8E8E8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to right, #6c2dce, #1E04A6);
+}
+
+.scroll-to-top-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #eee2ca;
+    color: var(--color-orange);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.3s ease;
+}
+
+.scroll-to-top-btn:hover {
+    background-color: #E8E8E8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .floating-buttons {
+        bottom: var(--spacing-lg);
+        right: var(--spacing-lg);
+    }
+
+    .scroll-to-top-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .floating-register-btn {
+        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: 0.9rem;
     }
 }

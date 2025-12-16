@@ -45,7 +45,7 @@ export const FAQ = () => {
             <div className="container">
                 <div className="faq-grid">
                     <div className="faq-header">
-                        <h2 className="section-title">
+                        <h2 className=".section-title-gig">
                             Frequently asked questions
                         </h2>
                     </div>
