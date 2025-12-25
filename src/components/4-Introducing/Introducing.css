@@ -1,0 +1,547 @@
+.introducing {
+    background-color: var(--color-light-blue);
+    padding: 0;
+    margin: 0;
+    border: 1px transparent;
+    border-radius: 0;
+}
+
+.introducing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    align-items: start;
+}
+
+/* Responsive Image Container */
+.introducing-image-container {
+    max-width: 100%;
+    margin: 0 20px 40px 20px;
+    order: 2;
+}
+
+.introducing-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Mobile: Show mobile image, hide desktop image */
+.introducing-img-mobile {
+    display: block;
+    box-shadow: none;
+}
+
+.introducing-img-desktop {
+    display: none;
+    box-shadow: none;
+}
+
+.introducing-form-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    max-width: 100%;
+    margin: 0 20px 40px 20px;
+    order: 2;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.form-tabs {
+    display: flex;
+    gap: 24px;
+}
+
+.form-tab {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 6px 0;
+    transition: color 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.form-tab.active {
+    color: #000;
+    font-weight: 500;
+    border-bottom: 2px solid #000;
+}
+
+.form-tab:hover {
+    color: #000;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.icon-btn:hover {
+    color: #000;
+}
+
+.signout-btn {
+    display: none;
+}
+
+.form-card-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.form-content {
+    margin-top: 0;
+}
+
+.form-section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.form-section-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.user-details-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.form-label {
+    font-size: 11px;
+    color: #666;
+    font-weight: 400;
+}
+
+.form-input,
+.form-select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #333;
+    background-color: #F8F8F8;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.form-input:focus,
+.form-select:focus {
+    outline: none;
+    border-color: var(--color-purple);
+    background-color: #fff;
+}
+
+.form-input::placeholder {
+    color: #999;
+    font-size: 13px;
+}
+
+.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23999' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.form-submit-btn {
+    background-color: #000;
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 8px;
+    align-self: center;
+}
+
+.form-submit-btn:hover {
+    background-color: #333;
+}
+
+.introducing-form-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    max-width: 100%;
+    margin: 0 20px 40px 20px;
+}
+
+.introducing-text {
+    max-width: 100%;
+    padding: 50px 20px 32px 20px;
+    order: 1;
+}
+
+.section-title.highlight {
+    color: var(--color-purple-dark);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: left !important;
+}
+
+.section-subtitle {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-grey);
+    line-height: 1.4;
+    margin-bottom: 24px !important;
+    text-align: left;
+}
+
+.feature-list {
+    margin-top: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: #333;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.checkmark-icon {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Uses .feature-list from lists.css */
+
+/* Extra small mobile devices */
+@media (max-width: 375px) {
+    .introducing-form-card {
+        margin: 0 16px 32px 16px;
+        padding: 20px;
+    }
+
+    .form-card-title {
+        font-size: 28px;
+    }
+
+    .form-section-title {
+        font-size: 16px;
+    }
+
+    .form-section-subtitle {
+        font-size: 13px;
+    }
+
+    .form-input,
+    .form-select {
+        font-size: 12px;
+        padding: 12px 12px;
+    }
+
+    .form-input::placeholder {
+        font-size: 12px;
+    }
+
+    .form-submit-btn {
+        font-size: 13px;
+        padding: 11px 28px;
+    }
+
+    .introducing-text {
+        padding: 40px 16px 24px 16px;
+    }
+
+    .section-title.highlight {
+        font-size: 32px;
+    }
+
+    .section-subtitle {
+        font-size: 28px;
+    }
+
+    .feature-list-item {
+        font-size: 14px;
+    }
+
+    .checkmark-icon {
+        width: 14px;
+        height: 14px;
+        min-width: 14px;
+    }
+}
+
+/* Small tablets and large phones */
+@media (min-width: 481px) and (max-width: 768px) {
+    .introducing-form-card {
+        margin: 0 32px 48px 32px;
+        padding: 28px 20px!important;
+    }
+
+    .form-card-title {
+        font-size: 36px;
+    }
+
+    .form-section-title {
+        font-size: 20px;
+    }
+
+    .form-section-subtitle {
+        font-size: 15px;
+    }
+
+    .form-input,
+    .form-select {
+        font-size: 14px;
+        padding: 15px 18px;
+    }
+
+    .form-input::placeholder {
+        font-size: 14px;
+    }
+
+    .form-submit-btn {
+        font-size: 15px;
+        padding: 13px 36px;
+    }
+
+    .introducing-text {
+        padding: 60px 32px 40px 32px;
+    }
+
+    .section-title.highlight {
+        font-size: 24px;
+    }
+
+    .section-subtitle {
+        font-size: 22px;
+    }
+
+    .feature-list-item {
+        font-size: 14px;
+    }
+
+    .checkmark-icon {
+        width: 18px;
+        height: 18px;
+        min-width: 18px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 968px) {
+    /* Switch to desktop image on tablet */
+    .introducing-img-mobile {
+        display: none;
+    }
+
+    .introducing-img-desktop {
+        display: block;
+    }
+
+    .introducing-image-container {
+        margin: 0 0 40px 0;
+    }
+
+    .introducing {
+        padding: 60px 30px!important;
+        margin: 0 40px;
+        border-radius: 10px;
+    }
+
+    .introducing-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .introducing-form-card {
+        margin: 0 0 40px 0;
+        padding: var(--spacing-xl);
+    }
+
+    .form-card-title {
+        font-size: 1.5rem;
+    }
+
+    .introducing-text {
+        padding: 0 20px 40px 20px;
+    }
+
+    .section-title.highlight {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 22px;
+    }
+
+    .feature-list-item {
+        font-size: 15px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 969px) {
+    /* Switch to desktop image on desktop */
+    .introducing-img-mobile {
+        display: none;
+    }
+
+    .introducing-img-desktop {
+        display: block;
+    }
+
+    .introducing-image-container {
+        margin: 0;
+        order: 1;
+    }
+
+    .introducing {
+        padding: 60px 0;
+        margin: 0 148px;
+        border-radius: 10px;
+    }
+
+    .introducing-grid {
+        grid-template-columns: 55% 45%;
+        gap: var(--spacing-2xl);
+    }
+
+    .introducing-form-card {
+        margin: 0;
+        padding: var(--spacing-lg) var(--spacing-xl);
+        order: 0;
+    }
+
+    .form-card-title {
+        font-size: 1.75rem;
+    }
+
+    .form-section-title {
+        font-size: 1.25rem;
+    }
+
+    .form-section-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .form-input,
+    .form-select {
+        font-size: 0.8rem;
+        padding: 10px var(--spacing-md);
+    }
+
+    .form-submit-btn {
+        font-size: 0.8rem;
+        padding: 9px 18px;
+    }
+
+    .introducing-text {
+        padding: 0 60px 0 0;
+        order: 2;
+    }
+
+    .section-title.highlight {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 7px;
+    }
+
+    .section-subtitle {
+        width: 95%;
+        font-size: 24px;
+        margin-bottom: 0 !important;
+    }
+
+    .feature-list {
+        margin-top: 28px;
+    }
+
+    .feature-list-item {
+        color: var(--color-grey);
+        font-size: 0.9rem;
+        line-height: 1.5;
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .checkmark-icon {
+        width: 15px;
+        height: 15px;
+        min-width: 20px;
+        margin-top: 3px;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+    .introducing-grid {
+        grid-template-columns: 55% 45%;
+        gap: var(--spacing-3xl);
+    }
+}
+
+
+.flip-row-item{
+    
+}

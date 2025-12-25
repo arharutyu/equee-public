@@ -1,0 +1,258 @@
+.lifetime-value {
+    background-color: var(--color-white);
+    padding: 60px 20px;
+}
+
+.lifetime-order {
+    order: -1;
+}
+
+/* Text Content */
+.lifetime-value-text {
+    max-width: 100%;
+    order: 1;
+}
+
+.lifetime-value-text .section-title-gig {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.lifetime-value-text .section-description {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+/* Callout Box */
+.lifetime-value-callout {
+    background-color: var(--color-light-cream);
+    border-radius: 12px;
+    padding: 32px 20px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.callout-icon {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    background-color: var(--color-orange);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    flex-shrink: 0;
+}
+
+.piggy-icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    filter: brightness(0) invert(1);
+}
+
+.callout-content {
+    flex: 1;
+}
+
+.callout-title {
+    color: #A35F2A;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.callout-description {
+    font-size: 14px !important;
+    color: #C07A4A;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.illustration-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.illustration-img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Extra small mobile devices */
+@media (max-width: 375px) {
+    .lifetime-value {
+        padding: 50px 16px;
+    }
+
+    .lifetime-value-text .section-title-gig {
+        font-size: 36px;
+        color:#333  ;
+    }
+
+    .lifetime-value-text .section-description {
+        font-size: 14px;
+    }
+
+    .lifetime-value-callout {
+        padding: 28px 16px;
+        gap: 16px;
+    }
+
+    .callout-icon {
+        width: 70px;
+        height: 70px;
+        min-width: 70px;
+    }
+
+    .piggy-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .callout-title {
+        font-size: 20px;
+    }
+
+    .callout-description {
+        font-size: 12px !important;
+    }
+}
+
+/* Small tablets and large phones */
+@media (min-width: 481px) and (max-width: 768px) {
+    .lifetime-value {
+        padding: 70px 32px;
+    }
+
+    .lifetime-value-text .section-title-gig {
+        font-size: 30px;
+    }
+
+    .lifetime-value-text .section-description {
+        font-size: 14px;
+    }
+
+    .lifetime-value-callout {
+        padding: 36px 24px;
+        gap: 24px;
+    }
+
+    .callout-icon {
+        width: 90px;
+        height: 90px;
+        min-width: 90px;
+    }
+
+    .piggy-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .callout-title {
+        font-size: 20px;
+    }
+
+    .callout-description {
+        font-size: 15px !important;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    .lifetime-value {
+        padding: 120px 40px 70px 40px;
+    }
+
+    .lifetime-order {
+        order: 0;
+    }
+
+    .lifetime-value-text {
+        order: 0;
+        padding-right: var(--spacing-xl);
+    }
+
+    .section-two-col {
+        gap: var(--spacing-3xl);
+        align-items: center;
+    }
+
+    .lifetime-value-text .section-title-gig {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .lifetime-value-text .section-description {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .lifetime-value-callout {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        padding: 20px 30px;
+        gap: var(--spacing-lg);
+    }
+
+    .callout-icon {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+    }
+
+    .piggy-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .callout-title {
+        font-size: 1.125rem;
+    }
+
+    .callout-description {
+        font-size: 16px !important;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+    .lifetime-value-text .section-title-gig {
+        font-size: 42px;
+    }
+
+    .lifetime-value-text .section-description {
+        font-size: 20px!important;
+    }
+
+    .callout-icon {
+        width: 65px;
+        height: 65px;
+        min-width: 65px;
+    }
+
+    .piggy-icon {
+        width: 35px;
+        height: 35px;
+    }
+}

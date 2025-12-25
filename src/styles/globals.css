@@ -1,0 +1,20 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/*TODO: Import further poppins styles (semibold, medium, and light)*/
+
+/* Core */
+@import './variables.css';
+@import './reset.css';
+@import './typography.css';
+@import './buttons.css';
+@import './layout.css';
+
+/* Components */
+@import './sections.css';
+@import './img.css';
+@import './icons.css';
+@import './lists.css';
+
+
+@import './utilities.css';
+

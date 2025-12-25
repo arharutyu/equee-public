@@ -1,0 +1,110 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    font-family: var(--font-family), var(--font-family-system), serif;
+    font-size: var(--font-size-p);
+    font-weight: 750;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    outline: none;
+    /* min-height: 3.5rem; */
+}
+
+.btn:focus {
+    outline: 2px solid var(--color-purple);
+    outline-offset: 2px;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Primary Buttons */
+.btn-primary-orange {
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--gradient-orange);
+    color: var(--color-white);
+    border: none;
+    padding: 12px 45px;
+}
+
+.btn-primary-orange:hover {
+    background: linear-gradient(to right, #6c2dce, #1E04A6);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-primary-purple {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 60px;
+    background: var(--gradient-orange);
+    color: var(--color-white);
+    border: 1px solid transparent;
+}
+
+.btn-primary-purple:hover {
+    color: #DC8A1E;
+    background: transparent;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid orange;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    font-size: 15px;
+    font-weight: 600;
+    background: var(--color-white);
+    color: var(--color-orange-dark);
+    border: 2px solid #dfc7b4;
+    padding: 10px 52px;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(to right, #B54317, #DC8A1E);
+    color: var(--color-white);
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Outline Light Button (for 1-Header-style buttons) */
+.btn-outline-light {
+    background: var(--color-white);
+    color: var(--color-purple-dark);
+    border: 2px solid var(--color-white);
+    padding: 9px 55px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-outline-light:hover {
+    background: var(--color-light-cream);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Button sizes */
+.btn-sm {
+    padding: var(--btn-padding-y-sm) var(--btn-padding-x-sm);
+    font-size: 0.875rem;
+    min-height: 2.5rem;
+}
+
+.btn-lg {
+    padding: var(--btn-padding-y-lg) var(--btn-padding-x-lg);
+    font-size: 1.125rem;
+    min-height: 4rem;
+}
