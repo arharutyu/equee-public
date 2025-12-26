@@ -6,7 +6,7 @@ export const WhyNow = () => {
             <div className="container">
                 <div className="section-two-col">
                     <div className="why-now-text">
-                        <h2 className="section-title">
+                        <h2 className="section-title-gig">
                             Why Get Equee Now?
                         </h2>
 
@@ -19,7 +19,11 @@ export const WhyNow = () => {
                         </p>
 
                         <p className="section-description">
-                            The more savings you build the more you can invest. The more you invest the greater the potential for bigger returns. It's known in the industry as compounding. But in
+                            The more savings you build the more you can invest. The more you invest the greater the potential for bigger returns. It's known in the industry as compounding. But in simple terms it means your money makes more money.
+                        </p>
+
+                        <p className="section-description">
+                            And we're guessing you'd be happier with more money.
                         </p>
                     </div>
 

@@ -40,26 +40,38 @@ export const Navbar = () => {
           </button>
 
           {/* Navigation Menu */}
-          <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-            <li className="nav-item">
-              <Link
-                  to="/"
-                  className={`nav-link ${isActive('/') ? 'active' : ''}`}
-                  onClick={closeMenu}
-              >
-                Sign Up / Login
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                  to="/contact"
-                  className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
-                  onClick={closeMenu}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+            {/* Mobile Menu Header */}
+            <div className="mobile-menu-header">
+              <span className="mobile-menu-title">Menu</span>
+              <button className="mobile-menu-close" onClick={closeMenu} aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            {/* Menu Items */}
+            <ul className="nav-menu-list">
+              <li className="nav-item nav-item-primary">
+                <Link
+                    to="/"
+                    className={`sec-nav-link ${isActive('/') ? 'active' : ''}`}
+                    onClick={closeMenu}
+                >
+                  Sign up/Login
+                </Link>
+              </li>
+              <li className="nav-item nav-item-secondary">
+                <Link
+                    to="/contact"
+                    className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
+                    onClick={closeMenu}
+                >
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
 
           {/* Overlay for mobile */}
           {isMenuOpen && <div className="nav-overlay" onClick={closeMenu}></div>}

@@ -19,12 +19,12 @@
 }
 
 /* TEXT ELEMENTS */
-.callout-title {
+/* .callout-title {
     color: var(--color-purple-dark);
     font-size: var(--font-size-h5);
     font-weight: 600;
     margin-bottom: var(--spacing-md);
-}
+} */
 
 .callout-content {
     color: var(--color-grey);
@@ -38,7 +38,8 @@
 }
 
 .callout-content p + p {
-    margin-top: var(--spacing-md);
+    margin-top: 7px;
+    color: #AB6D3B;
 }
 
 /* MOBILE OVERRIDES */

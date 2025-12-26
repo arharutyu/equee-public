@@ -1,6 +1,6 @@
 .faq {
     background-color: var(--color-white);
-    padding: var(--spacing-3xl) 0;
+    padding: 150px 0px 160px 0px;
 }
 
 .faq-grid {
@@ -27,7 +27,7 @@
 
 /* Individual FAQ Item */
 .faq-item {
-    border-bottom: 1px solid var(--color-purple-light);
+    border-bottom: 2px solid #D4CFF2;
     padding: var(--spacing-lg) 0;
 }
 
@@ -56,8 +56,8 @@
 
 .faq-question-text {
     color: var(--color-grey);
-    font-size: var(--font-size-h5);
-    font-weight: 400;
+    font-size: 19px;
+    font-weight: 600;
     line-height: 1.4;
     transition: color var(--transition-normal);
 }
@@ -87,8 +87,8 @@
 
 .faq-answer p {
     color: var(--color-grey);
-    font-size: var(--font-size-p);
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 1.6;
     margin-bottom: 0;
 }

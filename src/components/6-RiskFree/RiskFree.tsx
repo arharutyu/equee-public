@@ -14,7 +14,7 @@ export const RiskFree = () => {
                     </div>
 
                     <div className="risk-free-text">
-                        <h2 className="section-title">
+                        <h2 className="section-title-gig">
                             Try Equee Risk Free
                         </h2>
 

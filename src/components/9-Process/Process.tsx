@@ -1,16 +1,21 @@
 import { useState } from 'react';
 import './Process.css';
+import processImg1 from '../../../public/img/home-img-process-1.jpg';
+import processImg2 from '../../../public/img/home-img-process-2.jpg';
+import processImg3 from '../../../public/img/home-img-process-3.jpg';
 
 interface ProcessStep {
     id: number;
     title: string;
     items: { number: number; text: string }[];
+    image: string;
 }
 
 const processSteps: ProcessStep[] = [
     {
         id: 1,
         title: 'Step 1 - Registering',
+        image: processImg1,
         items: [
             {
                 number: 1,
@@ -36,8 +41,7 @@ const processSteps: ProcessStep[] = [
     },
     {
         id: 2,
-        title: 'Step 2 - Recieving documents',
-        items: [
+        title: 'Step 2 - Receiving documents',        image: processImg2,        items: [
             {
                 number: 6,
                 text: "Once you've signed the paperwork, we send some to your old superfund to close your account and to your new one (if we have recommended a change), for the opening of a new account and the transfer of your super balance."
@@ -59,18 +63,19 @@ const processSteps: ProcessStep[] = [
     {
         id: 3,
         title: 'Step 3 - Monitoring performance',
+        image: processImg3,
         items: [
             {
                 number: 10,
-                text: 'We monitor your super investment performance and rebalance when needed.'
+                text: 'Once everything is set up, we monitor your super investments.'
             },
             {
                 number: 11,
-                text: 'We review your insurance annually and adjust as your circumstances change.'
+                text: 'We report to you annually via email.'
             },
             {
                 number: 12,
-                text: 'We provide ongoing support and advice via email whenever you need it.'
+                text: "Every 3 years we will review any insurances you have set up with us. The review would cover things like if the premium you're currently paying is reasonable and if you've still got the right amount of cover based on any changes in personal circumstances. Generally, insurance requirements tend to change less often in a major way e.g. buying a house or say giving birth, so a review once every 3 years is enough. You're also welcome to contact us earlier, via email, for an earlier review if there has been a major change in your personal circumstances."
             }
         ]
     }
@@ -78,7 +83,7 @@ const processSteps: ProcessStep[] = [
 
 export const Process = () => {
     const [activeStep, setActiveStep] = useState(0);
-    const [mobileExpandedStep, setMobileExpandedStep] = useState<number | null>(null);
+    // const [mobileExpandedStep, setMobileExpandedStep] = useState<number | null>(null);
 
     const currentStep = processSteps[activeStep];
     const prevStep = activeStep > 0 ? processSteps[activeStep - 1] : null;
@@ -88,9 +93,9 @@ export const Process = () => {
         setActiveStep(index);
     };
 
-    const toggleMobileStep = (stepId: number) => {
-        setMobileExpandedStep(mobileExpandedStep === stepId ? null : stepId);
-    };
+    // const toggleMobileStep = (stepId: number) => {
+    //     setMobileExpandedStep(mobileExpandedStep === stepId ? null : stepId);
+    // };
 
     return (
         <section className="process section">
@@ -151,7 +156,7 @@ export const Process = () => {
                     </div>
 
                     <div className="process-illustration">
-                        {/* Illustration placeholder - to be added */}
+                        <img src={currentStep.image} alt={currentStep.title} />
                     </div>
                 </div>
 
@@ -162,52 +167,21 @@ export const Process = () => {
                     <div className="process-accordion">
                         {processSteps.map((step) => (
                             <div key={step.id} className="process-accordion-item">
-                                <button
-                                    className={`process-accordion-header ${mobileExpandedStep === step.id ? 'active' : ''}`}
-                                    onClick={() => toggleMobileStep(step.id)}
-                                >
-                                    <span>{step.title}</span>
-                                    <svg
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        className={`chevron ${mobileExpandedStep === step.id ? 'rotated' : ''}`}
-                                    >
-                                        <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </button>
-
-                                {mobileExpandedStep === step.id && (
-                                    <div className="process-accordion-content">
-                                        <h3 className="process-step-title-mobile">{step.title}</h3>
-                                        <ul className="process-list">
-                                            {step.items.map((item) => (
-                                                <li key={item.number} className="process-list-item">
-                                                    <span className="process-number">{item.number}</span>
-                                                    <p>{item.text}</p>
-                                                </li>
-                                            ))}
-                                        </ul>
+                                <div className="process-accordion-content">
+                                    <h3 className="process-step-title-mobile">{step.title}</h3>
+                                    <ul className="process-list">
+                                        {step.items.map((item) => (
+                                            <li key={item.number} className="process-list-item">
+                                                <span className="process-number">{item.number}</span>
+                                                <p>{item.text}</p>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <div className="process-illustration-mobile">
+                                        <img src={step.image} alt={step.title} />
                                     </div>
-                                )}
+                                </div>
                             </div>
-                        ))}
-                    </div>
-
-                    {/* Mobile Navigation Menu */}
-                    <div className="process-mobile-nav">
-                        {processSteps.map((step, index) => (
-                            <button
-                                key={step.id}
-                                className="process-mobile-nav-item"
-                                onClick={() => toggleMobileStep(step.id)}
-                            >
-                                <span id={index.toString()}>{step.title}</span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                </svg>
-                            </button>
                         ))}
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 /* Contact Content Section */
 .contact-content {
     background-color: var(--color-white);
-    padding: var(--spacing-3xl) 0;
+    padding: 70px 0px 160px 0px;
 }
 
 .contact-content-grid {
@@ -22,7 +22,7 @@
 
 .contact-info-description {
     color: var(--color-grey);
-    font-size: var(--font-size-p);
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.6;
     margin-bottom: var(--spacing-xl);
@@ -37,7 +37,7 @@
 .contact-info-email,
 .contact-info-phone {
     color: var(--color-grey);
-    font-size: var(--font-size-p);
+    font-size: 15px;
     font-weight: 300;
     margin: 0;
 }
@@ -54,20 +54,20 @@
 .form-label {
     display: block;
     color: var(--color-grey);
-    font-size: var(--font-size-p);
+    font-size: 16px;
     font-weight: 400;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: 4px;
 }
 
 .form-control {
     width: 100%;
-    padding: var(--spacing-md);
+    padding: 10px;
     font-family: var(--font-family);
-    font-size: var(--font-size-p);
+    font-size: 16px;
     color: var(--color-black);
     background-color: var(--color-white);
-    border: 1px solid var(--color-purple-light);
-    border-radius: var(--border-radius-sm);
+    border: 2px solid var(--color-purple-light);
+    border-radius: 5px;
     transition: border-color var(--transition-normal);
 }
 
@@ -139,6 +139,9 @@
 /* Large Desktop */
 @media (min-width: 1200px) {
     .contact-info-title {
-        font-size: 3rem;
+        font-size: 40px;
+        width: 75%;
+        font-weight: 500;
+        line-height: 1.3;
     }
 }
