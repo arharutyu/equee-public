@@ -19,15 +19,15 @@ const processSteps: ProcessStep[] = [
         items: [
             {
                 number: 1,
-                text: 'We confirm your identity (this a Government requirement).'
+                text: 'You complete some questions and upload some documents for us.'
             },
             {
                 number: 2,
-                text: 'You complete some questions for us.'
+                text: 'We confirm your identity (this a Government requirement).'
             },
             {
                 number: 3,
-                text: "We complete of advice with your recommendations and send it to you. You'll also have a copy of it in your personal online portal as well as all other communications we have with you, eg. Email."
+                text: "We complete of advice with your recommendations and send it to you. You'll also have a copy of it in your personal online portal as well as all other documents we have with you, eg. superannuation reports"
             },
             {
                 number: 4,
@@ -48,7 +48,7 @@ const processSteps: ProcessStep[] = [
             },
             {
                 number: 7,
-                text: 'The new superfund then sets up your account, receives your super balance and invests it based on our recommendations. They also provide you online log in details and password.'
+                text: 'The new superfund then sets up your account, receives your super balance and invests it based on our recommendations. They also provide you online login details and password.'
             },
             {
                 number: 8,
