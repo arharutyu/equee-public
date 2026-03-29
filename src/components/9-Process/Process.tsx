@@ -48,7 +48,7 @@ const processSteps: ProcessStep[] = [
             },
             {
                 number: 7,
-                text: 'The new superfund then sets up your account, receives your super balance and invests it based on our recommendations. They also provide you online log-in details and password.'
+                text: 'The new superfund then sets up your account, receives your super balance and invests it based on our recommendations. They also provide you online login details and password.'
             },
             {
                 number: 8,
