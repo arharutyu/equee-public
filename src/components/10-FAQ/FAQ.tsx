@@ -9,7 +9,7 @@ interface FAQItem {
 const faqData: FAQItem[] = [
     {
         question: "Can't I just leave my super with the option I've chosen?",
-        answer: "You can but there's a big problem with set and forget super. Things change. Your investment strategy or fund may not always be the right one for you. Fund performance changes. Fees change. Even the people managing your money may change. Equee makes sure you always have the right strategy in place for you. Having the right strategy may mean better returns over the life of the investment and in turn a bigger super balance."
+        answer: "You can, but there's a big problem with set and forget super. Things change. Your investment strategy or fund may not always be the right one for you. Fund performance changes. Fees change. Even the people managing your money may change. Equee makes sure you always have the right strategy in place for you. Having the right strategy may mean better returns over the life of the investment and in turn a bigger super balance."
     },
     {
         question: "How much insurance do I need?",
